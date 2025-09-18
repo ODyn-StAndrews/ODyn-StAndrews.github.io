@@ -62,7 +62,8 @@ title: Ocean Dynamics @ St Andrews
 <section id="news">
   <h2>News</h2>
   <ul class="news-list">
-    {% assign items = site.news | sort: 'date' | reverse | slice: 0, 5 %}
+    {% assign items = site.news | default: site.collections.news.docs %}
+    {% assign items = items | sort: 'date' | reverse | slice: 0, 5 %}
     {% for n in items %}
       <li>
         <span class="news-emoji">{{ n.emoji | default: '📰' }}</span>
