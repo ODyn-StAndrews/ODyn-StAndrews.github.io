@@ -48,7 +48,6 @@ title: Ocean Dynamics @ St Andrews
   </div>
   {% if site.data.members.alumni and site.data.members.alumni.size > 0 %}
     <h3 style="margin-top:32px;">Alumni</h3>
-    {% assign a_count = site.data.members.alumni | size %}
     {% assign a_cols = cols | times: 2 %}
     {% if a_cols < 2 %}{% assign a_cols = 2 %}{% endif %}
     <div class="people-container people-alumni" style="grid-template-columns: repeat({{ a_cols }}, minmax(100px, 1fr));">
