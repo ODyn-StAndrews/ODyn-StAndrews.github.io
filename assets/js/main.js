@@ -35,6 +35,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const path = window.location.pathname || '/';
   const isHome = (path === '/' || path.endsWith('/index.html'));
+  // Common refs used below
+  const titleLink = document.querySelector('header h1 a');
+  const homeIcon = document.querySelector('.nav-home a');
 
   if (isHome) {
     window.addEventListener('scroll', function() {
@@ -105,8 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Also set Home active immediately when clicking title or home icon
     if (titleLink) titleLink.addEventListener('click', () => setActiveHome());
-    const homeIconLink = document.querySelector('.nav-home a');
-    if (homeIconLink) homeIconLink.addEventListener('click', () => setActiveHome());
+    if (homeIcon) homeIcon.addEventListener('click', () => setActiveHome());
   } else {
     // Static, compact header for non-home pages
     header.classList.add('static', 'compact');
@@ -136,7 +138,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // Smooth scroll to top when clicking site title on home page
-  const titleLink = document.querySelector('header h1 a');
   if (titleLink) {
     titleLink.addEventListener('click', function(ev) {
       const p = window.location.pathname || '/';
@@ -148,7 +149,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Smooth scroll for the home icon in nav when already on homepage
-  const homeIcon = document.querySelector('.nav-home a');
   if (homeIcon) {
     homeIcon.addEventListener('click', function(ev) {
       const p = window.location.pathname || '/';
