@@ -6,6 +6,8 @@
   --accent-2: #ff7a59; /* coral */
   --text: #ffffff;
   --muted: #d6e2f0;
+  --link: #71d7ff;   /* light cyan */
+  --link-hover: #a6e8ff; /* brighter cyan */
 }
 
 html, body {
@@ -21,6 +23,10 @@ body {
   color: var(--text);
   font-size: 18px;
 }
+
+/* Global link color for dark backgrounds */
+a { color: var(--link); text-decoration: underline; }
+a:hover { color: var(--link-hover); }
 header {
   position: fixed;
   top: 0;
@@ -54,6 +60,8 @@ header > * { position: relative; z-index: 1; }
 /* When compact, remove transparency and rely on solid background */
 header.compact { background: #0c223a; }
 header.compact::after { background: none; }
+/* Make header static and compact for non-home pages */
+header.static { position: static; height: 110px !important; }
 header h1 { margin: 0; font-size: var(--title-size, 3rem); line-height: 1.05; color: var(--accent-1); text-shadow: 0 2px 8px rgba(0,0,0,0.35); }
 header h1 a { color: white; text-decoration: none; }
 nav { margin-left: auto; max-width: 50%; }
@@ -152,8 +160,8 @@ footer { text-align: center; padding: 24px; background: var(--bg-3); }
 .pub-item { margin: 0 0 12px 0; }
 .pub-title a { color: #fff; text-decoration: underline; }
 .pub-meta { display: block; color: #d6e2f0; font-size: 0.95em; }
-.pub-meta a { color: #ff9a82; text-decoration: underline; }
-.pub-meta a:hover { color: #ffb39f; }
+.pub-meta a { color: var(--link); text-decoration: underline; }
+.pub-meta a:hover { color: var(--link-hover); }
 /* Keep publications text sizing stable even as body size increases */
 #publications { font-size: 17px; }
 

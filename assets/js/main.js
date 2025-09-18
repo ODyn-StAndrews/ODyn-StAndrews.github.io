@@ -33,15 +33,27 @@ document.addEventListener("DOMContentLoaded", function() {
     ticking = false;
   }
 
-  window.addEventListener('scroll', function() {
-    if (!ticking) {
-      window.requestAnimationFrame(onScroll);
-      ticking = true;
-    }
-  }, { passive: true });
+  const path = window.location.pathname || '/';
+  const isHome = (path === '/' || path.endsWith('/index.html'));
 
-  // Initialize on load
-  onScroll();
+  if (isHome) {
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        window.requestAnimationFrame(onScroll);
+        ticking = true;
+      }
+    }, { passive: true });
+    // Initialize on load
+    onScroll();
+  } else {
+    // Static, compact header for non-home pages
+    header.classList.add('static', 'compact');
+    header.style.setProperty('--header-height', `${MIN_H}px`);
+    header.style.setProperty('--logo-size', `${MIN_LOGO}px`);
+    header.style.setProperty('--uni-logo-height', `${MIN_UNI}px`);
+    header.style.setProperty('--title-size', `${MIN_TITLE_REM}rem`);
+    header.style.setProperty('--video-opacity', `${MIN_OPACITY}`);
+  }
 
   // Simple lightbox for research galleries
   const lb = document.createElement('div');
@@ -65,8 +77,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const titleLink = document.querySelector('header h1 a');
   if (titleLink) {
     titleLink.addEventListener('click', function(ev) {
-      const path = window.location.pathname || '/';
-      if (path === '/' || path.endsWith('/index.html')) {
+      const p = window.location.pathname || '/';
+      if (p === '/' || p.endsWith('/index.html')) {
         ev.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
