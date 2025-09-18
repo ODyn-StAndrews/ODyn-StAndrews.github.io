@@ -70,6 +70,9 @@ nav ul li { display: inline; }
 nav ul li a { color: white; text-decoration: none; font-weight: 600; white-space: nowrap; padding-bottom: 2px; border-bottom: 2px solid transparent; }
 nav ul li a:hover { color: var(--accent-1); }
 nav ul li a.active { color: var(--accent-1); border-bottom-color: var(--accent-1); }
+/* Home icon spacing */
+.nav-home a { display: inline-flex; align-items: center; padding-bottom: 0; border-bottom: none; opacity: 0.95; }
+.nav-home a:hover { color: var(--accent-1); opacity: 1; }
 main { display: block; }
 section { padding: 64px 50px; margin: 0; scroll-margin-top: 110px; }
 #about { margin-top: 410px; scroll-margin-top: 110px; }
