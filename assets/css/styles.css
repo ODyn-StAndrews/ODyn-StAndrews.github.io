@@ -176,6 +176,7 @@ footer { text-align: center; padding: 24px; background: var(--bg-3); }
 .pub-item { margin: 0 0 12px 0; }
 .pub-title a { color: #fff; text-decoration: underline; }
 .pub-meta { display: block; color: #d6e2f0; font-size: 0.95em; }
+.pub-meta strong { color: #ffffff; font-weight: 700; }
 .pub-meta a { color: var(--link); text-decoration: underline; }
 .pub-meta a:hover { color: var(--link-hover); }
 /* Keep publications text sizing stable even as body size increases */
