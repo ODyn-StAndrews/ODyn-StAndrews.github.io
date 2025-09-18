@@ -21,10 +21,10 @@ current:
   affiliation: University of St Andrews
   order: 2
   website: https://research-portal.st-andrews.ac.uk/en/persons/caroline-gjelstrup
-  personal:
-  github:
-  bluesky:
-  substack:
+  personal: null
+  github: null
+  bluesky: null
+  substack: null
 - slug: nelson-poumaere
   name: Nelson Poumaëre
   role: Postdoctoral Research Associate
@@ -33,10 +33,10 @@ current:
   affiliation: University of St Andrews
   order: 3
   website: https://research-portal.st-andrews.ac.uk/en/persons/nelson-poumaere
-  personal:
-  github:
-  bluesky:
-  substack:
+  personal: null
+  github: null
+  bluesky: null
+  substack: null
 - slug: maddie-shankle
   name: Maddie Shankle
   role: Postdoctoral Research Associate
@@ -45,10 +45,10 @@ current:
   affiliation: University of St Andrews
   order: 4
   website: https://research-portal.st-andrews.ac.uk/en/persons/maddie-shankle
-  personal:
-  github:
-  bluesky:
-  substack:
+  personal: null
+  github: null
+  bluesky: null
+  substack: null
 - slug: xintong-iris-liang
   name: Xintong Iris Liang
   role: Graduate Student
@@ -57,10 +57,10 @@ current:
   affiliation: University of St Andrews
   order: 5
   website: https://research-portal.st-andrews.ac.uk/en/persons/xintong-iris-liang
-  personal:
-  github:
-  bluesky:
-  substack:
+  personal: null
+  github: null
+  bluesky: null
+  substack: null
 - slug: freya-gibbon
   name: Freya Gibbon
   role: Graduate Student
@@ -69,10 +69,10 @@ current:
   affiliation: University of St Andrews
   order: 6
   website: null
-  personal:
-  github:
-  bluesky:
-  substack:
+  personal: null
+  github: null
+  bluesky: null
+  substack: null
 - slug: aoife-ni-bhuachalla
   name: Aoife Ní Bhuachalla
   role: Graduate Student
@@ -81,10 +81,34 @@ current:
   affiliation: University of St Andrews
   order: 7
   website: null
-  personal:
-  github:
-  bluesky:
-  substack:
+  personal: null
+  github: null
+  bluesky: null
+  substack: null
+- slug: andrew-chingos
+  name: Andrew Chingos
+  role: Graduate Student
+  image: /assets/img/people/andrew-chingos.jpeg
+  orcid: 0000-0002-0113-8963
+  affiliation: University of St Andrews
+  order: 8
+  website: https://research-portal.st-andrews.ac.uk/en/persons/andrew-eleuftherius-chingos
+  personal: null
+  github: null
+  bluesky: null
+  substack: null
+- slug: rose-gallichan
+  name: Rose Gallichan
+  role: Undergraduate Researcher
+  image: /assets/img/people/placeholder.svg
+  orcid: null
+  affiliation: University of St Andrews
+  order: 9
+  website: null
+  personal: null
+  github: null
+  bluesky: null
+  substack: null
 alumni:
 - slug: sample-alumnus
   name: Alex Example

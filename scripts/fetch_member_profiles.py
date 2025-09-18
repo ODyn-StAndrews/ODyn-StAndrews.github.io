@@ -98,10 +98,9 @@ def update_members(members):
             resp = SESSION.get(page, timeout=30)
             resp.raise_for_status()
             soup = BeautifulSoup(resp.text, 'html.parser')
-            # Bio
-            bio = extract_text(soup)
-            if bio and (not m.get('bio') or m['bio'] == 'Bio coming soon.'):
-                m['bio'] = bio
+            # We no longer store bios in members.yml; remove if present
+            if 'bio' in m:
+                del m['bio']
                 changed = True
             # Links
             orcid, scholar = extract_links(soup)
@@ -139,4 +138,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
