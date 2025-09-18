@@ -2,23 +2,30 @@ document.addEventListener("DOMContentLoaded", function() {
   const header = document.querySelector("header");
   if (!header) return;
 
-  // Hysteresis thresholds to avoid flicker near the boundary
-  const ADD_THRESHOLD = 160;   // px: add .shrink when scrolling beyond
-  const REMOVE_THRESHOLD = 120; // px: remove .shrink when scrolling back above
+  // Interpolation ranges
+  const MAX_H = 400, MIN_H = 110;
+  const MAX_LOGO = 110, MIN_LOGO = 56;
+  const MAX_UNI = 56, MIN_UNI = 36;
+  const MAX_TITLE_REM = 3.0, MIN_TITLE_REM = 2.0;
+  const MAX_OPACITY = 1.0, MIN_OPACITY = 0.0;
+  const RANGE = 240; // px of scroll over which to interpolate
 
-  let lastState = header.classList.contains('shrink');
   let ticking = false;
+
+  function lerp(a, b, t) { return a + (b - a) * t; }
+  function clamp01(x) { return Math.max(0, Math.min(1, x)); }
 
   function onScroll() {
     const y = window.scrollY || window.pageYOffset || 0;
-    let target = lastState;
-    if (y > ADD_THRESHOLD) target = true;
-    else if (y < REMOVE_THRESHOLD) target = false;
+    const t = clamp01(y / RANGE);
 
-    if (target !== lastState) {
-      lastState = target;
-      header.classList.toggle('shrink', target);
-    }
+    // Set CSS variables for smooth transitions
+    header.style.setProperty('--header-height', `${lerp(MAX_H, MIN_H, t)}px`);
+    header.style.setProperty('--logo-size', `${lerp(MAX_LOGO, MIN_LOGO, t)}px`);
+    header.style.setProperty('--uni-logo-height', `${lerp(MAX_UNI, MIN_UNI, t)}px`);
+    header.style.setProperty('--title-size', `${lerp(MAX_TITLE_REM, MIN_TITLE_REM, t)}rem`);
+    header.style.setProperty('--video-opacity', `${lerp(MAX_OPACITY, MIN_OPACITY, t)}`);
+
     ticking = false;
   }
 
@@ -29,6 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }, { passive: true });
 
-  // Initialize on load in case we land scrolled
+  // Initialize on load
   onScroll();
 });
