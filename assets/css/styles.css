@@ -198,7 +198,7 @@ footer { text-align: center; padding: 24px; background: var(--bg-3); }
 }
 
 /* News */
-.news-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; align-items: start; }
+.news-layout { display: grid; grid-template-columns: 3fr 2fr; gap: 24px; align-items: start; }
 .news-list { list-style: none; padding: 0; margin: 0; }
 .news-list li { display: flex; align-items: baseline; gap: 8px; margin: 6px 0; }
 .news-list .news-emoji { font-size: 1.2rem; }
