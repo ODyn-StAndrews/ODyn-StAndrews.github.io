@@ -1,5 +1,5 @@
-<div class="person-card">
-  <div class="person-image">
+<div class="person-card" tabindex="0">
+  <div class="person-image" tabindex="-1">
     <img src="{{ include.image | default: 'https://via.placeholder.com/300' }}" alt="{{ include.name }}" loading="lazy">
     <div class="person-overlay">
       <h3 class="person-name"><a href="{{ include.url }}">{{ include.name }}</a></h3>

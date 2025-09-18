@@ -57,15 +57,15 @@ section {
 .research-text { width: 70%; }
 .people-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 16px;
   align-items: stretch;
 }
 
 /* Card and image */
-.person-card { position: relative; width: 100%; }
-.person-image { position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; }
-.person-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.person-card { position: relative; width: 100%; outline: none; }
+.person-image { position: relative; width: 100%; padding-top: 100%; overflow: hidden; border-radius: 8px; }
+.person-image img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* Overlay */
 .person-overlay {
@@ -76,8 +76,9 @@ section {
   opacity: 0;
   transition: opacity 200ms ease-in-out;
 }
-.person-image:hover .person-overlay,
-.person-image:focus-within .person-overlay { opacity: 1; }
+.person-card:hover .person-overlay,
+.person-card:focus .person-overlay,
+.person-card:focus-within .person-overlay { opacity: 1; }
 
 .person-name { margin: 0; font-size: 1.05rem; }
 .person-name a { color: #ffffff; text-decoration: none; }
