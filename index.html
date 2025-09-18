@@ -44,7 +44,7 @@ title: Ocean Dynamics @ St Andrews
     {% assign folks = site.data.members.current | sort: 'order' %}
     {% for m in folks %}
       {% capture purl %}/people/{{ m.slug }}/{% endcapture %}
-      {% include person_card.html image=m.image name=m.name url=purl role=m.role website=m.website personal=m.personal orcid=m.orcid scholar=m.scholar github=m.github bluesky=m.bluesky substack=m.substack %}
+      {% include person_card.html image=m.image name=m.name url=purl role=m.role website=m.website personal=m.personal orcid=m.orcid scholar=m.scholar github=m.github bluesky=m.bluesky substack=m.substack linkedin=m.linkedin %}
     {% endfor %}
   </div>
   {% if site.data.members.alumni and site.data.members.alumni.size > 0 %}
