@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Interpolation ranges
   const MAX_H = 400, MIN_H = 110;
   const MAX_LOGO = 110, MIN_LOGO = 56;
-  const MAX_UNI = 56, MIN_UNI = 36;
+  const MAX_UNI = 68, MIN_UNI = 36;
   const MAX_TITLE_REM = 3.0, MIN_TITLE_REM = 2.0;
   const MAX_OPACITY = 1.0, MIN_OPACITY = 0.0;
   const RANGE = 240; // px of scroll over which to interpolate

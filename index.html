@@ -13,8 +13,8 @@ title: Ocean Dynamics @ St Andrews
   <div class="research-container">
     {% assign topics = site.research | sort: 'order' %}
     {% for topic in topics %}
-      {% assign rev = forloop.index0 | modulo: 2 %}
-      {% include research_panel.html image=topic.image title=topic.title url=topic.url summary=topic.summary images=topic.images reverse=rev %}
+      {% assign is_rev = forloop.index0 | modulo: 2 %}
+      {% include research_panel.html image=topic.image title=topic.title summary=topic.summary images=topic.images reverse=is_rev %}
     {% endfor %}
   </div>
   {% unless topics and topics.size > 0 %}
