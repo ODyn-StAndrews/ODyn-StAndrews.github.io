@@ -152,6 +152,8 @@ footer { text-align: center; padding: 24px; background: var(--bg-3); }
 .pub-item { margin: 0 0 12px 0; }
 .pub-title a { color: #fff; text-decoration: underline; }
 .pub-meta { display: block; color: #d6e2f0; font-size: 0.95em; }
+.pub-meta a { color: #ff9a82; text-decoration: underline; }
+.pub-meta a:hover { color: #ffb39f; }
 
 /* Alumni */
 .alumni-list { list-style: none; padding: 0; margin: 8px 0 0 0; }

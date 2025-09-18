@@ -89,24 +89,17 @@ def fetch_by_crossref_query(name, extra_query=None, rows=50):
 def main():
     with open(MEMBERS_FILE, 'r') as f:
         members = yaml.safe_load(f) or {}
-    current = members.get('current', [])
+    current = [m for m in members.get('current', []) if m.get('orcid')]
 
     all_pubs = {}
     for a in current:
         name = a.get('name')
         orcid = a.get('orcid')
-        extra = a.get('affiliation')
         pubs = []
-        if orcid:
-            try:
-                pubs = fetch_by_orcid(orcid)
-            except Exception as e:
-                print(f'WARN: ORCID fetch failed for {name} ({orcid}): {e}', file=sys.stderr)
-        if not pubs:
-            try:
-                pubs = fetch_by_crossref_query(name, extra)
-            except Exception as e:
-                print(f'WARN: Crossref query failed for {name}: {e}', file=sys.stderr)
+        try:
+            pubs = fetch_by_orcid(orcid)
+        except Exception as e:
+            print(f'WARN: ORCID fetch failed for {name} ({orcid}): {e}', file=sys.stderr)
         for p in pubs:
             key = (p.get('doi') or p.get('title')).lower()
             if key not in all_pubs:
