@@ -36,10 +36,18 @@ Structure
 - `assets/js/main.js` site JavaScript
 - `wash1.mp4` header background video
 
-Local preview
+Local preview (Jekyll)
 
-GitHub Pages builds with Jekyll automatically. To preview locally, install Jekyll and run:
+Option A: Quick one‑liner
+- Install dependencies and serve in one go:
+  - `BUNDLE_PATH=vendor/bundle bundle install && bundle exec jekyll serve --livereload`
+  - Open: http://127.0.0.1:4000/
 
-`bundle exec jekyll serve`
+Option B: Helper script
+- Run `./scripts/serve.sh`
+- It installs gems locally under `vendor/bundle` and starts the server detached.
+- Open: http://127.0.0.1:4000/
 
-Then visit `http://127.0.0.1:4000/`.
+Notes
+- Requires Ruby (>= 3.0 recommended) and Bundler (`gem install bundler`).
+- Live reload rebuilds on file changes. Stop the detached server with `pkill -f jekyll` if needed.
