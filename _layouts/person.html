@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<section id="person">
+  <h2>{{ page.title }}</h2>
+  {% if page.image %}
+    <p><img src="{{ page.image }}" alt="{{ page.title }}" style="max-width:200px;border-radius:50%"></p>
+  {% endif %}
+  {% if page.role %}
+    <p><strong>{{ page.role }}</strong></p>
+  {% endif %}
+  <div class="content">
+    {{ content }}
+  </div>
+</section>
+

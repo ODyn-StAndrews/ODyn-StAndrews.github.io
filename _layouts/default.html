@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <video autoplay loop muted>
+      <source src="/wash1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="logo-container">
+      <img src="https://via.placeholder.com/100" alt="Group Logo" class="large-logo">
+      <div class="title-container">
+        <h1><a href="/">{{ site.title }}</a></h1>
+        <div class="small-logos">
+          <img src="https://via.placeholder.com/30" alt="Small Logo 1">
+          <img src="https://via.placeholder.com/30" alt="Small Logo 2">
+          <img src="https://via.placeholder.com/30" alt="Small Logo 3">
+        </div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/index.html#about">About</a></li>
+        <li><a href="/index.html#research">Research</a></li>
+        <li><a href="/index.html#publications">Publications</a></li>
+        <li><a href="/index.html#people">People</a></li>
+        <li><a href="/index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; {{ "now" | date: "%Y" }} Ocean Dynamics @ St Andrews. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
+

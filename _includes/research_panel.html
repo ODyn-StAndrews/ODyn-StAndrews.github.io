@@ -1,0 +1,12 @@
+<div class="research-panel">
+  <img src="{{ include.image | default: 'https://via.placeholder.com/300' }}" alt="{{ include.title }}">
+  <div class="research-text">
+    <h3><a href="{{ include.url }}">{{ include.title }}</a></h3>
+    {% if include.summary %}
+      <p>{{ include.summary }}</p>
+    {% else %}
+      <p>{{ include.excerpt | strip }}</p>
+    {% endif %}
+  </div>
+</div>
+

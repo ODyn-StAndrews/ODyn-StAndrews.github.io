@@ -1,0 +1,26 @@
+title: Ocean Dynamics @ St Andrews
+description: We are a research group dedicated to advancing knowledge in ocean dynamics.
+url: https://ODyn-StAndrews.github.io
+markdown: kramdown
+theme: null
+
+collections:
+  people:
+    output: true
+    permalink: /people/:name/
+  research:
+    output: true
+    permalink: /research/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: people
+    values:
+      layout: person
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: research
+

@@ -1,0 +1,6 @@
+<div class="person">
+  <img src="{{ include.image | default: 'https://via.placeholder.com/150' }}" alt="{{ include.name }}">
+  <h3><a href="{{ include.url }}">{{ include.name }}</a></h3>
+  {% if include.role %}<p>{{ include.role }}</p>{% endif %}
+</div>
+
