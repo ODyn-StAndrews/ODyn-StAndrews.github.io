@@ -46,44 +46,51 @@ document.addEventListener("DOMContentLoaded", function() {
     // Initialize on load
     onScroll();
 
-    // Active nav highlighting by section in view
+    // Active nav highlighting using scroll position (more stable than IO)
     const links = Array.from(document.querySelectorAll('nav a[href*="#"]'));
-    const map = new Map();
+    const items = [];
     links.forEach(l => {
       try {
         const u = new URL(l.getAttribute('href'), window.location.origin);
         const id = (u.hash || '').slice(1);
         if (!id) return;
         const sec = document.getElementById(id);
-        if (sec) map.set(id, { link: l, sec });
+        if (sec) items.push({ id, sec, link: l });
       } catch (_) {}
     });
+    // Sort by document position (top offset)
+    items.sort((a, b) => a.sec.offsetTop - b.sec.offsetTop);
 
     function setActive(id) {
       links.forEach(l => l.classList.remove('active'));
-      const item = map.get(id);
-      if (item) item.link.classList.add('active');
+      const it = items.find(x => x.id === id);
+      if (it) it.link.classList.add('active');
     }
 
-    // Observe sections and update active link
-    const observer = new IntersectionObserver((entries) => {
-      // Pick the entry closest to top that is intersecting
-      let best = null;
-      entries.forEach(e => {
-        if (!e.isIntersecting) return;
-        if (!best || e.intersectionRatio > best.intersectionRatio) best = e;
-      });
-      if (best) setActive(best.target.id);
-    }, { root: null, rootMargin: '-120px 0px -60% 0px', threshold: [0.25, 0.5, 0.75] });
+    function updateActiveByScroll() {
+      const headerH = header.getBoundingClientRect().height;
+      const pos = window.scrollY + headerH + 10;
+      let current = items.length ? items[0].id : null;
+      for (let i = 0; i < items.length; i++) {
+        if (items[i].sec.offsetTop <= pos) current = items[i].id;
+        else break;
+      }
+      if (current) setActive(current);
+    }
 
-    map.forEach(v => observer.observe(v.sec));
-
-    // Also set active on click immediately
-    links.forEach(l => l.addEventListener('click', () => {
-      const u = new URL(l.getAttribute('href'), window.location.origin);
-      const id = (u.hash || '').slice(1);
-      if (id) setActive(id);
-    }));
+    // Tie into existing scroll rAF by calling here, and also on resize
+    const _onScrollOrig = onScroll;
+    function onScrollWrapped() {
+      _onScrollOrig();
+      updateActiveByScroll();
+    }
+    onScroll = onScrollWrapped;
+    updateActiveByScroll();
+    window.addEventListener('resize', () => {
+      // Recompute order if layout changes significantly
+      items.sort((a, b) => a.sec.offsetTop - b.sec.offsetTop);
+      updateActiveByScroll();
+    });
   } else {
     // Static, compact header for non-home pages
     header.classList.add('static', 'compact');
