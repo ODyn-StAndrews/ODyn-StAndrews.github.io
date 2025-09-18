@@ -7,17 +7,32 @@
     {% if include.authors_list %}
       —
       {% for a in include.authors_list %}
-        {% assign author_lc = a | downcase | strip %}
+        {%- comment -%} Normalize author: lowercase, remove spaces, periods, commas {%- endcomment -%}
+        {% assign author_norm = a | downcase | strip | replace: ' ', '' | replace: '.', '' | replace: ',', '' %}
         {% assign is_member = false %}
         {% for m in site.data.members.current %}
-          {% assign name_lc = m.name | downcase | strip %}
-          {% if author_lc == name_lc %}
+          {% assign full_norm = m.name | downcase | strip | replace: ' ', '' | replace: '.', '' | replace: ',', '' %}
+          {% assign parts = m.name | downcase | strip | split: ' ' %}
+          {% assign first = parts | first %}
+          {% assign last = parts | last %}
+          {% assign fi = first | slice: 0,1 %}
+          {% assign last_norm = last | replace: ' ', '' | replace: '.', '' | replace: ',', '' %}
+          {% assign pat1 = fi | append: last_norm %}
+          {% assign pat2 = last_norm | append: fi %}
+          {% if author_norm == full_norm or author_norm contains pat1 or author_norm contains pat2 %}
             {% assign is_member = true %}
           {% endif %}
           {% if m.aliases %}
             {% for alias in m.aliases %}
-              {% assign alias_lc = alias | downcase | strip %}
-              {% if author_lc == alias_lc %}
+              {% assign alias_full_norm = alias | downcase | strip | replace: ' ', '' | replace: '.', '' | replace: ',', '' %}
+              {% assign alias_parts = alias | downcase | strip | split: ' ' %}
+              {% assign alias_first = alias_parts | first %}
+              {% assign alias_last = alias_parts | last %}
+              {% assign alias_fi = alias_first | slice: 0,1 %}
+              {% assign alias_last_norm = alias_last | replace: ' ', '' | replace: '.', '' | replace: ',', '' %}
+              {% assign alias_pat1 = alias_fi | append: alias_last_norm %}
+              {% assign alias_pat2 = alias_last_norm | append: alias_fi %}
+              {% if author_norm == alias_full_norm or author_norm contains alias_pat1 or author_norm contains alias_pat2 %}
                 {% assign is_member = true %}
               {% endif %}
             {% endfor %}
