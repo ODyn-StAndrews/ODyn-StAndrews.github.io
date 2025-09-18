@@ -1,1 +1,359 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Dynamics @ St Andrews</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: "Century Gothic", sans-serif;
+            background-color: #1e3a5f;
+            color: #ffffff;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            z-index: 1000;
+            transition: height 0.3s ease-in-out, background 0.3s ease-in-out;
+            box-sizing: border-box;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .large-logo {
+            height: 100px;
+        }
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .small-logos {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+        .small-logos img {
+            height: 30px;
+        }
+        header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            transition: opacity 0.3s ease-in-out;
+        }
+        header.shrink {
+            height: 100px;
+            background: #123456;
+        }
+        header.shrink video {
+            opacity: 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            transition: font-size 0.3s ease-in-out;
+        }
+        header.shrink h1 {
+            font-size: 1.8em;
+        }
+        header h1 a {
+            color: white;
+            text-decoration: none;
+        }
+        nav {
+            margin-left: auto;
+            max-width: 50%;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        section {
+            padding: 50px;
+            margin: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 0px;
+            scroll-margin-top: 110px;
+        }
+        #about {
+            margin-top: 410px;
+            scroll-margin-top: 110px;
+        }
+        .research-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .research-panel {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .research-panel img {
+            width: 30%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .research-text {
+            width: 70%;
+        }
+        .people-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .person {
+            text-align: center;
+            width: 200px;
+        }
+        .person img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .person h3 a {
+            color: white;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            z-index: 1001;
+        }
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #123456;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const header = document.querySelector("header");
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 0) {
+                    header.classList.add("shrink");
+                } else {
+                    header.classList.remove("shrink");
+                }
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            const people = document.querySelectorAll(".person h3 a");
+            const popup = document.createElement("div");
+            popup.classList.add("popup");
+            document.body.appendChild(popup);
+            
+            const overlay = document.createElement("div");
+            overlay.classList.add("popup-overlay");
+            document.body.appendChild(overlay);
+            
+            people.forEach(person => {
+                person.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    const personDiv = this.closest(".person");
+                    const personName = this.innerText;
+                    const personImage = personDiv.querySelector("img").src;
+                    let personDescription = "";
+
+                    // Add extra details for each person here
+                    if (personName === "Dr. Jane Doe") {
+                        personDescription = "<p>Dr. Jane Doe specializes in computational biology, focusing on genetic data analysis and bioinformatics.</p>";
+                    } else if (personName === "Dr. John Smith") {
+                        personDescription = "<p>Dr. John Smith is an AI researcher working on deep learning applications in medical imaging.</p>";
+                    } else if (personName === "Dr. Emily White") {
+                        personDescription = "<p>Dr. Emily White's research centers around quantum computing and its implications for cryptography.</p>";
+                    } else if (personName === "Dr. Michael Brown") {
+                        personDescription = "<p>Dr. Michael Brown is an expert in data science, developing innovative algorithms for big data analytics.</p>";
+                    } else if (personName === "Dr. Lisa Green") {
+                        personDescription = "<p>Dr. Lisa Green studies the impact of climate change on marine ecosystems and sustainable solutions.</p>";
+                    } else {
+                        personDescription = "<p>More details coming soon.</p>";
+                    }
+
+                    popup.innerHTML = `
+                        <img src="${personImage}" alt="${personName}">
+                        <h2>${personName}</h2>
+                        <p>${personDescription}</p>
+                        <button onclick='closePopup()'>Close</button>
+                    `;
+                    popup.style.display = "block";
+                    overlay.style.display = "block";
+                });
+            });
+            
+            window.closePopup = function() {
+                popup.style.display = "none";
+                overlay.style.display = "none";
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <video autoplay loop muted>
+            <source src="wash1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="logo-container">
+            <img src="https://via.placeholder.com/100" alt="Group Logo" class="large-logo">
+            <div class="title-container">
+                <h1><a href="#">Ocean Dynamics @ St Andrews</a></h1>
+                <div class="small-logos">
+                    <img src="https://via.placeholder.com/30" alt="Small Logo 1">
+                    <img src="https://via.placeholder.com/30" alt="Small Logo 2">
+                    <img src="https://via.placeholder.com/30" alt="Small Logo 3">
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#people">People</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a research group dedicated to advancing knowledge in [Your Field].</p>
+    </section>
+    
+    <section id="research">
+        <h2>Our Research</h2>
+        <div class="research-container">
+            <div class="research-panel">
+                <img src="https://via.placeholder.com/300" alt="Research Topic 1">
+                <div class="research-text">
+                    <h3>Topic 1</h3>
+                    <p>Brief description of research topic 1.</p>
+                </div>
+            </div>
+            <div class="research-panel">
+                <img src="https://via.placeholder.com/300" alt="Research Topic 2">
+                <div class="research-text">
+                    <h3>Topic 2</h3>
+                    <p>Brief description of research topic 2.</p>
+                </div>
+            </div>
+            <div class="research-panel">
+                <img src="https://via.placeholder.com/300" alt="Research Topic 3">
+                <div class="research-text">
+                    <h3>Topic 3</h3>
+                    <p>Brief description of research topic 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="publications">
+        <h2>Publications</h2>
+        <p>Find our latest publications here.</p>
+    </section>
+    
+    <section id="people">
+        <h2>People</h2>
+        <p>Meet the researchers behind our work.</p>
+        <div class="people-container">
+            <div class="person">
+                <img src="https://via.placeholder.com/150" alt="Person 1">
+                <h3><a href="#">Dr. Jane Doe</a></h3>
+                <p>Expert in Computational Biology</p>
+            </div>
+            <div class="person">
+                <img src="https://via.placeholder.com/150" alt="Person 2">
+                <h3><a href="#">Dr. John Smith</a></h3>
+                <p>AI and Machine Learning Researcher</p>
+            </div>
+            <div class="person">
+                <img src="https://via.placeholder.com/150" alt="Person 3">
+                <h3><a href="#">Dr. Emily White</a></h3>
+                <p>Quantum Computing Specialist</p>
+            </div>
+            <div class="person">
+                <img src="https://via.placeholder.com/150" alt="Person 4">
+                <h3><a href="#">Dr. Michael Brown</a></h3>
+                <p>Data Science and Analytics</p>
+            </div>
+            <div class="person">
+                <img src="https://via.placeholder.com/150" alt="Person 5">
+                <h3><a href="#">Dr. Lisa Green</a></h3>
+                <p>Environmental Research</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@researchgroup.com</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Research Group. All rights reserved.</p>
+    </footer>
+</body>
+</html>
