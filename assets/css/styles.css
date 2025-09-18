@@ -1,3 +1,13 @@
+:root {
+  --bg-1: #0e2a47;   /* deep navy */
+  --bg-2: #163c63;   /* ocean blue */
+  --bg-3: #0b223a;   /* darker section */
+  --accent-1: #4fd1ff; /* cyan */
+  --accent-2: #ff7a59; /* coral */
+  --text: #ffffff;
+  --muted: #d6e2f0;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -6,9 +16,9 @@ html, body {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Century Gothic", sans-serif;
-  background-color: #1e3a5f;
-  color: #ffffff;
+  font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-1);
+  color: var(--text);
 }
 header {
   position: fixed;
@@ -33,7 +43,7 @@ header video {
   position: absolute; top: 0; left: 0; width: 100%; height: 100%;
   object-fit: cover; z-index: -1; transition: opacity 0.3s ease-in-out;
 }
-header.shrink { height: 100px; background: #123456; }
+header.shrink { height: 100px; background: #0c223a; }
 header.shrink video { opacity: 0; }
 header h1 { margin: 0; font-size: 2.5em; transition: font-size 0.3s ease-in-out; }
 header.shrink h1 { font-size: 1.8em; }
@@ -41,18 +51,22 @@ header h1 a { color: white; text-decoration: none; }
 nav { margin-left: auto; max-width: 50%; }
 nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 15px; justify-content: flex-end; flex-wrap: wrap; }
 nav ul li { display: inline; }
-nav ul li a { color: white; text-decoration: none; font-weight: bold; white-space: nowrap; }
+nav ul li a { color: white; text-decoration: none; font-weight: 600; white-space: nowrap; }
+nav ul li a:hover { color: var(--accent-1); }
 main { display: block; }
-section {
-  padding: 50px; margin: 10px; background: rgba(255, 255, 255, 0.1);
-  border-radius: 0px; scroll-margin-top: 110px;
-}
+section { padding: 64px 50px; margin: 0; scroll-margin-top: 110px; }
 #about { margin-top: 410px; scroll-margin-top: 110px; }
-.research-container { display: flex; flex-direction: column; gap: 20px; }
-.research-panel {
-  display: flex; align-items: center; background: rgba(255, 255, 255, 0.2);
-  padding: 20px; border-radius: 8px; text-align: left;
-}
+
+/* Alternating section backgrounds */
+section:nth-of-type(odd) { background: var(--bg-1); }
+section:nth-of-type(even) { background: var(--bg-2); }
+
+/* Section headings */
+section h2 { margin-top: 0; font-weight: 700; letter-spacing: 0.3px; }
+section:nth-of-type(odd) h2 { color: var(--accent-1); }
+section:nth-of-type(even) h2 { color: var(--accent-2); }
+.research-container { display: flex; flex-direction: column; gap: 16px; }
+.research-panel { display: flex; align-items: center; padding: 16px 0; border-radius: 0; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.08); }
 .research-panel img { width: 30%; height: auto; object-fit: cover; border-radius: 8px; margin-right: 20px; }
 .research-text { width: 70%; }
 .people-container {
@@ -65,7 +79,7 @@ section {
 /* Card and image */
 .person-card { position: relative; width: 100%; outline: none; }
 .person-image { position: relative; width: 100%; padding-top: 100%; overflow: hidden; border-radius: 8px; }
-.person-image img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.person-image img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 220ms ease; }
 
 /* Overlay */
 .person-overlay {
@@ -76,6 +90,7 @@ section {
   opacity: 0;
   transition: opacity 200ms ease-in-out;
 }
+.person-card:hover .person-image img { transform: scale(1.05); }
 .person-card:hover .person-overlay,
 .person-card:focus .person-overlay,
 .person-card:focus-within .person-overlay { opacity: 1; }
@@ -91,7 +106,7 @@ section {
 /* (moved social-icons styles above for overlay context) */
 .popup { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; color: black; padding: 20px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.5); z-index: 1001; }
 .popup-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000; }
-footer { text-align: center; padding: 20px; background: #123456; }
+footer { text-align: center; padding: 24px; background: var(--bg-3); }
 
 /* Publications */
 .pub-list { list-style: none; padding: 0; margin: 0; }
