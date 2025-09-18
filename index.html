@@ -64,7 +64,7 @@ title: Ocean Dynamics @ St Andrews
     <ul class="pub-list">
       {% assign recent = data.items | slice: 0, 10 %}
       {% for p in recent %}
-        {% include publication_item.html title=p.title authors=p.authors venue=p.venue year=p.year doi=p.doi url=p.url %}
+        {% include publication_item.html title=p.title authors=p.authors authors_list=p.authors_list venue=p.venue year=p.year doi=p.doi url=p.url %}
       {% endfor %}
     </ul>
     <p><small>Updated {{ data.generated_at }}</small></p>

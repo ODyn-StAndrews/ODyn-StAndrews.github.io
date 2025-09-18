@@ -45,10 +45,12 @@ def extract_pub_from_crossref(item):
     return {
         'title': title.strip(),
         'authors': ', '.join(authors),
+        'authors_list': authors,
         'venue': container.strip(),
         'year': year,
         'doi': doi,
         'url': url,
+        'type': item.get('type'),
     }
 
 def fetch_by_orcid(orcid):
@@ -107,6 +109,8 @@ def main():
 
     # Sort by year desc then title
     deduped = list(all_pubs.values())
+    # Keep only peer-reviewed journal articles
+    deduped = [p for p in deduped if (p.get('type') == 'journal-article')]
     deduped.sort(key=lambda x: (x.get('year') or 0, x.get('title') or ''), reverse=True)
 
     out = {

@@ -4,10 +4,18 @@
     {% if include.url %}<a href="{{ include.url }}" target="_blank" rel="noopener">{{ include.title }}</a>{% else %}{{ include.title }}{% endif %}
   </span>
   <span class="pub-meta">
-    {% if authors %} — {{ authors }}.{% endif %}
+    {% assign team = site.data.members.current | map: 'name' %}
+    {% if include.authors_list %}
+      —
+      {% for a in include.authors_list %}
+        {% assign is_member = team contains a %}
+        {% if is_member %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% if forloop.last %}.{% else %}, {% endif %}
+      {% endfor %}
+    {% elsif authors %}
+      — {{ authors }}.
+    {% endif %}
     {% if include.venue %} {{ include.venue }}.{% endif %}
     {% if include.year %} {{ include.year }}.{% endif %}
     {% if include.doi %} DOI: <a href="https://doi.org/{{ include.doi }}" target="_blank" rel="noopener">{{ include.doi }}</a>.{% endif %}
   </span>
 </li>
-
