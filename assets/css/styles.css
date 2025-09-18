@@ -31,13 +31,13 @@ header {
   justify-content: space-between;
   padding: 0 40px;
   z-index: 1000;
-  transition: height 0.3s ease-in-out, background 0.3s ease-in-out;
+  transition: height 300ms ease, background 300ms ease, padding 300ms ease;
   box-sizing: border-box;
 }
 .logo-container { display: flex; align-items: center; gap: 20px; }
-.large-logo { height: 100px; width: 100px; object-fit: cover; border-radius: 8px; background: rgba(0,0,0,0.15); }
+.large-logo { height: 110px; width: 110px; object-fit: cover; border-radius: 8px; background: rgba(0,0,0,0.15); transition: height 300ms ease, width 300ms ease, transform 300ms ease; will-change: transform; }
 .title-container { display: flex; flex-direction: column; align-items: flex-start; }
-.university-logo { height: 36px; margin-top: 8px; filter: drop-shadow(0 1px 1px rgba(0,0,0,0.3)); }
+.university-logo { height: 56px; margin-top: 8px; filter: drop-shadow(0 1px 1px rgba(0,0,0,0.3)); transition: height 300ms ease; }
 header video {
   position: absolute; top: 0; left: 0; width: 100%; height: 100%;
   object-fit: cover; z-index: -1; transition: opacity 0.3s ease-in-out;
@@ -50,10 +50,12 @@ header::after {
   z-index: 0;
 }
 header > * { position: relative; z-index: 1; }
-header.shrink { height: 100px; background: #0c223a; }
+header.shrink { height: 110px; background: #0c223a; }
 header.shrink video { opacity: 0; }
-header h1 { margin: 0; font-size: 2.5em; transition: font-size 0.3s ease-in-out; color: var(--accent-1); text-shadow: 0 2px 8px rgba(0,0,0,0.35); }
-header.shrink h1 { font-size: 1.8em; }
+header h1 { margin: 0; font-size: 3rem; line-height: 1.05; transition: font-size 300ms ease; color: var(--accent-1); text-shadow: 0 2px 8px rgba(0,0,0,0.35); }
+header.shrink h1 { font-size: 2rem; }
+.shrink .large-logo { height: 56px; width: 56px; }
+.shrink .university-logo { height: 36px; }
 header h1 a { color: white; text-decoration: none; }
 nav { margin-left: auto; max-width: 50%; }
 nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 15px; justify-content: flex-end; flex-wrap: wrap; }
