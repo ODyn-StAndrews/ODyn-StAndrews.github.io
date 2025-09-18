@@ -111,6 +111,18 @@ def main():
     deduped = list(all_pubs.values())
     # Keep only peer-reviewed journal articles
     deduped = [p for p in deduped if (p.get('type') == 'journal-article')]
+
+    # Ensure authors_list exists even if Crossref didn't provide 'author'
+    for p in deduped:
+      if not p.get('authors_list'):
+        auth = p.get('authors') or ''
+        if auth:
+          try:
+            parts = [a.strip() for a in re.split(r"\s*,\s*", auth) if a.strip()]
+          except Exception:
+            parts = []
+          if parts:
+            p['authors_list'] = parts
     deduped.sort(key=lambda x: (x.get('year') or 0, x.get('title') or ''), reverse=True)
 
     out = {

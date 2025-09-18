@@ -17,9 +17,10 @@
           {% assign last = parts | last %}
           {% assign fi = first | slice: 0,1 %}
           {% assign last_norm = last | slugify | replace: '-', '' %}
+          {% assign first_norm = first | slugify | replace: '-', '' %}
           {% assign pat1 = fi | append: last_norm %}
           {% assign pat2 = last_norm | append: fi %}
-          {% if author_norm == full_norm or author_norm contains pat1 or author_norm contains pat2 %}
+          {% if author_norm == full_norm or author_norm contains pat1 or author_norm contains pat2 or (author_norm contains first_norm and author_norm contains last_norm) %}
             {% assign is_member = true %}
           {% endif %}
         {% endfor %}
