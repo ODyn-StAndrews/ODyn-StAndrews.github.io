@@ -95,7 +95,7 @@ def main():
     for a in current:
         name = a.get('name')
         orcid = a.get('orcid')
-        extra = a.get('crossref_query')
+        extra = a.get('affiliation')
         pubs = []
         if orcid:
             try:

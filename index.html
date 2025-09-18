@@ -47,6 +47,17 @@ title: Ocean Dynamics @ St Andrews
       {% include person_card.html image=m.image name=m.name url=purl role=m.role %}
     {% endfor %}
   </div>
+  {% if site.data.members.alumni and site.data.members.alumni.size > 0 %}
+    <h3 style="margin-top:32px;">Alumni</h3>
+    <ul class="alumni-list">
+      {% for a in site.data.members.alumni %}
+        <li class="alumni-item">
+          {% if a.website %}<a href="{{ a.website }}" target="_blank" rel="noopener">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}
+          {% if a.affiliation %} — {{ a.affiliation }}{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 </section>
 
 <section id="contact">
