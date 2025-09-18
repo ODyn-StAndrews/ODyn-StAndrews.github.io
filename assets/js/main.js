@@ -46,51 +46,54 @@ document.addEventListener("DOMContentLoaded", function() {
     // Initialize on load
     onScroll();
 
-    // Active nav highlighting using scroll position (more stable than IO)
+    // Active nav highlighting via IntersectionObserver (restored)
     const links = Array.from(document.querySelectorAll('nav a[href*="#"]'));
-    const items = [];
+    const map = new Map();
     links.forEach(l => {
       try {
         const u = new URL(l.getAttribute('href'), window.location.origin);
         const id = (u.hash || '').slice(1);
         if (!id) return;
         const sec = document.getElementById(id);
-        if (sec) items.push({ id, sec, link: l });
+        if (sec) map.set(id, { link: l, sec });
       } catch (_) {}
     });
-    // Sort by document position (top offset)
-    items.sort((a, b) => a.sec.offsetTop - b.sec.offsetTop);
 
     function setActive(id) {
       links.forEach(l => l.classList.remove('active'));
-      const it = items.find(x => x.id === id);
-      if (it) it.link.classList.add('active');
+      const item = map.get(id);
+      if (item) item.link.classList.add('active');
     }
 
-    function updateActiveByScroll() {
-      const headerH = header.getBoundingClientRect().height;
-      const pos = window.scrollY + headerH + 10;
-      let current = items.length ? items[0].id : null;
-      for (let i = 0; i < items.length; i++) {
-        if (items[i].sec.offsetTop <= pos) current = items[i].id;
-        else break;
+    const observer = new IntersectionObserver((entries) => {
+      // Choose the entry whose top is closest to the top and is intersecting
+      let candidate = null;
+      let minTop = Infinity;
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const top = e.boundingClientRect.top;
+        if (top >= -20 && top < minTop) {
+          minTop = top;
+          candidate = e;
+        }
+      });
+      if (!candidate) {
+        // Fallback: pick the highest ratio intersecting entry
+        entries.forEach(e => {
+          if (!e.isIntersecting) return;
+          if (!candidate || e.intersectionRatio > candidate.intersectionRatio) candidate = e;
+        });
       }
-      if (current) setActive(current);
-    }
+      if (candidate) setActive(candidate.target.id);
+    }, { root: null, rootMargin: '-120px 0px -60% 0px', threshold: [0.1, 0.25, 0.5, 0.75] });
 
-    // Tie into existing scroll rAF by calling here, and also on resize
-    const _onScrollOrig = onScroll;
-    function onScrollWrapped() {
-      _onScrollOrig();
-      updateActiveByScroll();
-    }
-    onScroll = onScrollWrapped;
-    updateActiveByScroll();
-    window.addEventListener('resize', () => {
-      // Recompute order if layout changes significantly
-      items.sort((a, b) => a.sec.offsetTop - b.sec.offsetTop);
-      updateActiveByScroll();
-    });
+    map.forEach(v => observer.observe(v.sec));
+
+    links.forEach(l => l.addEventListener('click', () => {
+      const u = new URL(l.getAttribute('href'), window.location.origin);
+      const id = (u.hash || '').slice(1);
+      if (id) setActive(id);
+    }));
   } else {
     // Static, compact header for non-home pages
     header.classList.add('static', 'compact');
@@ -123,6 +126,18 @@ document.addEventListener("DOMContentLoaded", function() {
   const titleLink = document.querySelector('header h1 a');
   if (titleLink) {
     titleLink.addEventListener('click', function(ev) {
+      const p = window.location.pathname || '/';
+      if (p === '/' || p.endsWith('/index.html')) {
+        ev.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
+
+  // Smooth scroll for the home icon in nav when already on homepage
+  const homeIcon = document.querySelector('.nav-home a');
+  if (homeIcon) {
+    homeIcon.addEventListener('click', function(ev) {
       const p = window.location.pathname || '/';
       if (p === '/' || p.endsWith('/index.html')) {
         ev.preventDefault();
