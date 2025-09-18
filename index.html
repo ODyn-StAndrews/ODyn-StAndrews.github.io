@@ -48,14 +48,15 @@ title: Ocean Dynamics @ St Andrews
   </div>
   {% if site.data.members.alumni and site.data.members.alumni.size > 0 %}
     <h3 style="margin-top:32px;">Alumni</h3>
-    <ul class="alumni-list">
+    {% assign a_count = site.data.members.alumni | size %}
+    {% assign a_cols = cols | times: 2 %}
+    {% if a_cols < 2 %}{% assign a_cols = 2 %}{% endif %}
+    <div class="people-container people-alumni" style="grid-template-columns: repeat({{ a_cols }}, minmax(100px, 1fr));">
       {% for a in site.data.members.alumni %}
-        <li class="alumni-item">
-          {% if a.website %}<a href="{{ a.website }}" target="_blank" rel="noopener">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}
-          {% if a.affiliation %} — {{ a.affiliation }}{% endif %}
-        </li>
+        {% capture aurl %}{% if a.website %}{{ a.website }}{% else %}#{% endif %}{% endcapture %}
+        {% include person_card.html image=a.image name=a.name url=aurl role=a.affiliation website=a.website %}
       {% endfor %}
-    </ul>
+    </div>
   {% endif %}
 </section>
 

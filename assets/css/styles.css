@@ -121,6 +121,12 @@ section:nth-of-type(even) h2 { color: var(--accent-2); }
   align-items: stretch;
 }
 
+/* Alumni grid tweaks: smaller tiles and tighter overlay text */
+.people-alumni { gap: 12px; }
+.people-alumni .person-name { font-size: 0.9rem; }
+.people-alumni .person-role { font-size: 0.8rem; }
+.people-alumni .person-overlay { padding: 6px; }
+
 /* Card and image */
 .person-card { position: relative; width: 100%; outline: none; }
 .person-image { position: relative; width: 100%; padding-top: 100%; overflow: hidden; border-radius: 8px; }
