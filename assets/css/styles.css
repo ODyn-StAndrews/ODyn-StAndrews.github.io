@@ -181,3 +181,10 @@ footer { text-align: center; padding: 24px; background: var(--bg-3); }
 .news-list .news-emoji { font-size: 1.2rem; }
 .news-list a { color: #fff; text-decoration: underline; }
 .news-list small { color: var(--muted); margin-left: 6px; }
+
+/* Join Us */
+.join-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.join-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 14px 16px; box-shadow: 0 8px 18px rgba(0,0,0,0.15); }
+.join-emoji { font-size: 1.6rem; margin-bottom: 6px; }
+.join-title { margin: 4px 0 8px 0; font-size: 1.25rem; color: var(--accent-1); }
+.join-body { color: var(--muted); line-height: 1.6; }

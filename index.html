@@ -100,8 +100,17 @@ title: Ocean Dynamics @ St Andrews
   {% endif %}
 </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Email: contact@researchgroup.com</p>
-  <!-- You can set contact details via _config.yml and render them here if desired. -->
+<section id="join">
+  <h2>Join Us</h2>
+  <div class="join-grid">
+    {% assign boxes = site.collections.join.docs | default: site.join %}
+    {% if boxes %}{% assign boxes = boxes | sort: 'order' %}{% endif %}
+    {% for b in boxes %}
+      <div class="join-card">
+        <div class="join-emoji">{{ b.emoji | default: '✨' }}</div>
+        <h3 class="join-title">{{ b.title }}</h3>
+        <div class="join-body">{{ b.content }}</div>
+      </div>
+    {% endfor %}
+  </div>
 </section>
