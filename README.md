@@ -34,7 +34,7 @@ Structure
 - `_research/` collection of research topics (auto-rendered)
 - `assets/css/styles.css` site styles
 - `assets/js/main.js` site JavaScript
-- `wash1.mp4` header background video
+- `assets/video/wash1.mp4` header background video
 
 Local preview (Jekyll)
 
