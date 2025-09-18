@@ -60,4 +60,16 @@ document.addEventListener("DOMContentLoaded", function() {
     cap.textContent = a.getAttribute('data-caption') || '';
     lb.classList.add('open');
   });
+
+  // Smooth scroll to top when clicking site title on home page
+  const titleLink = document.querySelector('header h1 a');
+  if (titleLink) {
+    titleLink.addEventListener('click', function(ev) {
+      const path = window.location.pathname || '/';
+      if (path === '/' || path.endsWith('/index.html')) {
+        ev.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
 });

@@ -6,7 +6,10 @@ title: Ocean Dynamics @ St Andrews
 <section id="about">
   <h2>About Us</h2>
   <div class="about-content">
-    <div class="about-text"><p>{{ site.description }}</p></div>
+    <div class="about-text">
+      <p>{{ site.description }}</p>
+      <p>The Ocean Dynamics group at the <a href="https://www.st-andrews.ac.uk/" target="_blank" rel="noopener">University of St Andrews</a> studies the ocean from the beautiful coastal town of St Andrews, in Scotland. We're based in the <a href="https://www.st-andrews.ac.uk/earth-sciences/" target="_blank" rel="noopener">School of Earth and Environmental Sciences</a> and participate as part of <a href="https://www.st-andrews.ac.uk/earth-sciences/research/centres/coast/" target="_blank" rel="noopener">COASt</a> (Climate, Oceans, and Atmosphere @ St Andrews). You can find lots of technical info about our group on <a href="https://odyn-standrews.github.io/wiki/" target="_blank" rel="noopener">our wiki page</a>, or scroll on to learn more about our research, team members, and recent news!</p>
+    </div>
     <img class="about-hero" src="/assets/img/about/standrews-bay.svg" alt="St Andrews Bay">
   </div>
 </section>
@@ -55,6 +58,24 @@ title: Ocean Dynamics @ St Andrews
     </ul>
   {% endif %}
 </section>
+
+<section id="news">
+  <h2>News</h2>
+  <ul class="news-list">
+    {% assign items = site.news | sort: 'date' | reverse | slice: 0, 5 %}
+    {% for n in items %}
+      <li>
+        <span class="news-emoji">{{ n.emoji | default: '📰' }}</span>
+        <a href="{{ n.url }}">{{ n.title }}</a>
+        <small>{{ n.date | date: "%b %d, %Y" }}</small>
+      </li>
+    {% endfor %}
+  </ul>
+  <p><a href="/news/">Read all news →</a></p>
+  {% unless items and items.size > 0 %}
+    <p>No news yet.</p>
+  {% endunless %}
+  </section>
 
 <section id="publications">
   <h2>Publications</h2>

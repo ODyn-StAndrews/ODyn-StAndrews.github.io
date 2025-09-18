@@ -22,21 +22,6 @@
           {% if author_norm == full_norm or author_norm contains pat1 or author_norm contains pat2 %}
             {% assign is_member = true %}
           {% endif %}
-          {% if m.aliases %}
-            {% for alias in m.aliases %}
-              {% assign alias_full_norm = alias | downcase | strip | replace: ' ', '' | replace: '.', '' | replace: ',', '' | replace: '-', '' %}
-              {% assign alias_parts = alias | downcase | strip | split: ' ' %}
-              {% assign alias_first = alias_parts | first %}
-              {% assign alias_last = alias_parts | last %}
-              {% assign alias_fi = alias_first | slice: 0,1 %}
-              {% assign alias_last_norm = alias_last | replace: ' ', '' | replace: '.', '' | replace: ',', '' | replace: '-', '' %}
-              {% assign alias_pat1 = alias_fi | append: alias_last_norm %}
-              {% assign alias_pat2 = alias_last_norm | append: alias_fi %}
-              {% if author_norm == alias_full_norm or author_norm contains alias_pat1 or author_norm contains alias_pat2 %}
-                {% assign is_member = true %}
-              {% endif %}
-            {% endfor %}
-          {% endif %}
         {% endfor %}
         {% if is_member %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% if forloop.last %}.{% else %}, {% endif %}
       {% endfor %}

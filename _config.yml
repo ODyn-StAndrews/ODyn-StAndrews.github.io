@@ -11,6 +11,9 @@ collections:
   research:
     output: true
     permalink: /research/:name/
+  news:
+    output: true
+    permalink: /news/:name/
 
 defaults:
   - scope:
@@ -23,4 +26,8 @@ defaults:
       type: research
     values:
       layout: research
-
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: news
