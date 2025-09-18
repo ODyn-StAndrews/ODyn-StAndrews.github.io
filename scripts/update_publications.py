@@ -9,7 +9,7 @@ import requests
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(__file__))
-AUTHORS_FILE = os.path.join(ROOT, '_data', 'authors.yml')
+MEMBERS_FILE = os.path.join(ROOT, '_data', 'members.yml')
 OUTPUT_FILE = os.path.join(ROOT, '_data', 'publications.json')
 
 CR_API = 'https://api.crossref.org/works'
@@ -87,11 +87,12 @@ def fetch_by_crossref_query(name, extra_query=None, rows=50):
     return [extract_pub_from_crossref(it) for it in items]
 
 def main():
-    with open(AUTHORS_FILE, 'r') as f:
-        authors = yaml.safe_load(f) or []
+    with open(MEMBERS_FILE, 'r') as f:
+        members = yaml.safe_load(f) or {}
+    current = members.get('current', [])
 
     all_pubs = {}
-    for a in authors:
+    for a in current:
         name = a.get('name')
         orcid = a.get('orcid')
         extra = a.get('crossref_query')
@@ -127,4 +128,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

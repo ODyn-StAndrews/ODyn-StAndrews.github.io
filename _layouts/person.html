@@ -1,16 +1,23 @@
 ---
 layout: default
 ---
+{% assign m = site.data.members.current | where: 'slug', page.member_id | first %}
+{% if m == nil %}
+  {% assign m = site.data.members.alumni | where: 'slug', page.member_id | first %}
+{% endif %}
+
 <section id="person">
-  <h2>{{ page.title }}</h2>
-  {% if page.image %}
-    <p><img src="{{ page.image }}" alt="{{ page.title }}" style="max-width:200px;border-radius:50%"></p>
+  <h2>{{ m.name }}</h2>
+  {% if m.image %}
+    <p><img src="{{ m.image }}" alt="{{ m.name }}" style="max-width:200px;border-radius:50%"></p>
   {% endif %}
-  {% if page.role %}
-    <p><strong>{{ page.role }}</strong></p>
+  {% if m.role %}
+    <p><strong>{{ m.role }}</strong></p>
+  {% endif %}
+  {% if m.website %}
+    <p><a href="{{ m.website }}" target="_blank" rel="noopener">Website</a></p>
   {% endif %}
   <div class="content">
     {{ content }}
   </div>
 </section>
-

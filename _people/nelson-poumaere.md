@@ -1,9 +1,6 @@
 ---
-title: Nelson Poumaëre
-role: Postdoctoral Research Associate
-image: https://via.placeholder.com/150?text=Nelson+Poumaere
-order: 3
+layout: person
+member_id: nelson-poumaere
 ---
 
 Bio coming soon.
-

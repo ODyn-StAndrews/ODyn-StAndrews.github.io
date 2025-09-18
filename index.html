@@ -41,14 +41,12 @@ title: Ocean Dynamics @ St Andrews
   <h2>People</h2>
   <p>Meet the researchers behind our work.</p>
   <div class="people-container">
-    {% assign folks = site.people | sort: 'order' %}
-    {% for person in folks %}
-      {% include person_card.html image=person.image name=person.title url=person.url role=person.role %}
+    {% assign folks = site.data.members.current | sort: 'order' %}
+    {% for m in folks %}
+      {% capture purl %}/people/{{ m.slug }}/{% endcapture %}
+      {% include person_card.html image=m.image name=m.name url=purl role=m.role %}
     {% endfor %}
   </div>
-  {% unless folks and folks.size > 0 %}
-    <p>Add people as Markdown files in <code>_people/</code>.</p>
-  {% endunless %}
 </section>
 
 <section id="contact">

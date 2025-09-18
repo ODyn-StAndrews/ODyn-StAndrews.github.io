@@ -1,9 +1,6 @@
 ---
-title: Graeme MacGilchrist
-role: Group Lead
-image: https://via.placeholder.com/150?text=Graeme+MacGilchrist
-order: 1
+layout: person
+member_id: graeme-macgilchrist
 ---
 
 Bio coming soon.
-

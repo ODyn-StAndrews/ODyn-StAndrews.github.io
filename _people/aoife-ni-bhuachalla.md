@@ -1,9 +1,6 @@
 ---
-title: Aoife Ní Bhuachalla
-role: Graduate Student
-image: https://via.placeholder.com/150?text=Aoife+Ni+Bhuachalla
-order: 7
+layout: person
+member_id: aoife-ni-bhuachalla
 ---
 
 Bio coming soon.
-

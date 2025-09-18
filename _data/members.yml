@@ -1,0 +1,60 @@
+current:
+  - slug: graeme-macgilchrist
+    name: Graeme MacGilchrist
+    role: Group Lead
+    image: https://via.placeholder.com/150?text=Graeme+MacGilchrist
+    orcid:
+    crossref_query: University of St Andrews
+    order: 1
+    website:
+
+  - slug: caroline-gjelstrup
+    name: Caroline Gjelstrup
+    role: Postdoctoral Research Associate
+    image: https://via.placeholder.com/150?text=Caroline+Gjelstrup
+    orcid:
+    crossref_query: University of St Andrews
+    order: 2
+
+  - slug: nelson-poumaere
+    name: Nelson Poumaëre
+    role: Postdoctoral Research Associate
+    image: https://via.placeholder.com/150?text=Nelson+Poumaere
+    orcid:
+    crossref_query: University of St Andrews
+    order: 3
+
+  - slug: maddie-shankle
+    name: Maddie Shankle
+    role: Postdoctoral Research Associate
+    image: https://via.placeholder.com/150?text=Maddie+Shankle
+    orcid:
+    crossref_query: University of St Andrews
+    order: 4
+
+  - slug: xintong-iris-liang
+    name: Xintong Iris Liang
+    role: Graduate Student
+    image: https://via.placeholder.com/150?text=Xintong+Iris+Liang
+    orcid:
+    crossref_query: University of St Andrews
+    order: 5
+
+  - slug: freya-gibbon
+    name: Freya Gibbon
+    role: Graduate Student
+    image: https://via.placeholder.com/150?text=Freya+Gibbon
+    orcid:
+    crossref_query: University of St Andrews
+    order: 6
+
+  - slug: aoife-ni-bhuachalla
+    name: Aoife Ní Bhuachalla
+    role: Graduate Student
+    image: https://via.placeholder.com/150?text=Aoife+Ni+Bhuachalla
+    orcid:
+    crossref_query: University of St Andrews
+    order: 7
+
+alumni: []
+
