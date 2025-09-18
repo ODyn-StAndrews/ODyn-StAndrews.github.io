@@ -40,8 +40,15 @@ title: Ocean Dynamics @ St Andrews
 <section id="people">
   <h2>People</h2>
   <p>Meet the researchers behind our work.</p>
-  <div class="people-container">
-    {% assign folks = site.data.members.current | sort: 'order' %}
+  {% assign folks = site.data.members.current | sort: 'order' %}
+  {% assign count = folks | size %}
+  {% assign cols = 1 %}
+  {% if count > 1 and count <= 4 %}{% assign cols = 2 %}{% endif %}
+  {% if count > 4 and count <= 9 %}{% assign cols = 3 %}{% endif %}
+  {% if count > 9 and count <= 16 %}{% assign cols = 4 %}{% endif %}
+  {% if count > 16 and count <= 25 %}{% assign cols = 5 %}{% endif %}
+  {% if count > 25 and count <= 36 %}{% assign cols = 6 %}{% endif %}
+  <div class="people-container" style="grid-template-columns: repeat({{ cols }}, minmax(180px, 1fr));">
     {% for m in folks %}
       {% capture purl %}/people/{{ m.slug }}/{% endcapture %}
       {% include person_card.html image=m.image name=m.name url=purl role=m.role website=m.website personal=m.personal orcid=m.orcid scholar=m.scholar github=m.github bluesky=m.bluesky substack=m.substack linkedin=m.linkedin %}

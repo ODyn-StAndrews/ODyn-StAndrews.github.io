@@ -64,7 +64,7 @@ current:
 - slug: freya-gibbon
   name: Freya Gibbon
   role: Graduate Student
-  image: https://via.placeholder.com/150?text=Freya+Gibbon
+  image: /assets/img/people/placeholder.svg
   orcid: null
   affiliation: University of St Andrews
   order: 6
@@ -76,7 +76,7 @@ current:
 - slug: aoife-ni-bhuachalla
   name: Aoife Ní Bhuachalla
   role: Graduate Student
-  image: https://via.placeholder.com/150?text=Aoife+Ni+Bhuachalla
+  image: /assets/img/people/placeholder.svg
   orcid: null
   affiliation: University of St Andrews
   order: 7
