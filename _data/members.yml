@@ -43,6 +43,8 @@ current:
   github:
   bluesky:
   substack:
+  aliases:
+    - Nelson Poumaere
 - slug: maddie-shankle
   name: Maddie Shankle
   role: Postdoctoral Research Associate
@@ -94,6 +96,8 @@ current:
   github:
   bluesky:
   substack:
+  aliases:
+    - Aoife Ni Bhuachalla
 alumni:
 - slug: sample-alumnus
   name: Alex Example

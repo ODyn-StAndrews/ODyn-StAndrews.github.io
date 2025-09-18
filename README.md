@@ -51,3 +51,23 @@ Option B: Helper script
 Notes
 - Requires Ruby (>= 3.0 recommended) and Bundler (`gem install bundler`).
 - Live reload rebuilds on file changes. Stop the detached server with `pkill -f jekyll` if needed.
+
+Publications data and author highlighting
+
+- Source: Publications are fetched via ORCID (preferred) and resolved with Crossref.
+- Filtering: Only peer‑reviewed journal articles are kept (`type == journal-article`).
+- Who is included: Only current members with an `orcid` set in `_data/members.yml`.
+- Highlighting: On the homepage, authors that match an Ocean Dynamics member are bolded.
+  - Matching uses case‑insensitive normalization that removes spaces, periods, commas, and hyphens.
+  - It also matches on first‑initial + last name (e.g., `gmacgilchrist`, `macgilchristg`).
+  - For names with diacritics or known variants, add `aliases:` under that member, e.g.:
+
+    - slug: nelson-poumaere
+      name: Nelson Poumaëre
+      orcid: 0000-0000-0000-0000
+      aliases:
+        - Nelson Poumaere
+
+- Update: Trigger the GitHub Action “Update publications” (manual or weekly), or run locally:
+
+  `python3 scripts/update_publications.py`
