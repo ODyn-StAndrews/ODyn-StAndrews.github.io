@@ -62,7 +62,7 @@ header.compact { background: #0c223a; }
 header.compact::after { background: none; }
 /* Make header static and compact for non-home pages */
 header.static { position: static; height: 110px !important; }
-header h1 { margin: 0; font-size: var(--title-size, 3rem); line-height: 1.05; color: var(--accent-1); text-shadow: 0 2px 8px rgba(0,0,0,0.35); }
+header h1 { margin: 0; font-size: clamp(1.6rem, 5vw, var(--title-size, 3rem)); line-height: 1.05; color: var(--accent-1); text-shadow: 0 2px 8px rgba(0,0,0,0.35); }
 header h1 a { color: white; text-decoration: none; }
 nav { margin-left: auto; max-width: 50%; }
 nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 15px; justify-content: flex-end; flex-wrap: wrap; }
@@ -146,6 +146,11 @@ section:nth-of-type(even) h2 { color: var(--accent-2); }
 .person-card:focus .person-overlay,
 .person-card:focus-within .person-overlay { opacity: 1; }
 
+/* Touch devices: no hover — show overlay by default */
+@media (hover: none) {
+  .person-overlay { opacity: 1; }
+}
+
 .person-name { margin: 0; font-size: 1.05rem; }
 .person-name a { color: #ffffff; text-decoration: none; }
 .person-role { margin: 2px 0 6px 0; color: #e8eff7; font-size: 0.95rem; }
@@ -180,6 +185,17 @@ footer { text-align: center; padding: 24px; background: var(--bg-3); }
 .alumni-list { list-style: none; padding: 0; margin: 8px 0 0 0; }
 .alumni-item { margin: 4px 0; color: #d6e2f0; }
 .alumni-item a { color: #fff; text-decoration: underline; }
+
+/* Small-screen refinements */
+@media (max-width: 640px) {
+  nav ul { gap: 10px; }
+  section { padding: 50px 20px; }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
 
 /* News */
 .news-list { list-style: none; padding: 0; margin: 0; }
