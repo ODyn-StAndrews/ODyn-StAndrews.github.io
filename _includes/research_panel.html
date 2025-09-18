@@ -1,5 +1,5 @@
-<div class="research-panel">
-  <img src="{{ include.image | default: 'https://via.placeholder.com/300' }}" alt="{{ include.title }}">
+<div class="research-panel{% if include.reverse %} reverse{% endif %}">
+  <img class="research-hero" src="{{ include.image | default: '/assets/img/research/placeholder1.svg' }}" alt="{{ include.title }}">
   <div class="research-text">
     <h3><a href="{{ include.url }}">{{ include.title }}</a></h3>
     {% if include.summary %}
@@ -7,6 +7,17 @@
     {% else %}
       <p>{{ include.excerpt | strip }}</p>
     {% endif %}
+
+    {% if include.images and include.images.size > 0 %}
+    <div class="gallery-grid">
+      {% for g in include.images %}
+        {% assign klass = '' %}
+        {% if forloop.index0 == 0 or forloop.index0 == 3 %}{% assign klass = 'span-2' %}{% endif %}
+        <a href="{{ g.url }}" class="gallery-item {{ klass }}" data-caption="{{ g.caption | escape }}">
+          <img src="{{ g.url }}" alt="{{ g.caption | default: include.title }}">
+        </a>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
 </div>
-
