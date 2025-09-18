@@ -4,12 +4,11 @@
     {% if include.url %}<a href="{{ include.url }}" target="_blank" rel="noopener">{{ include.title }}</a>{% else %}{{ include.title }}{% endif %}
   </span>
   <span class="pub-meta">
-    {% assign team = site.data.members.current | map: 'name' %}
     {% if include.authors_list %}
       —
       {% for a in include.authors_list %}
-        {% assign is_member = team contains a %}
-        {% if is_member %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% if forloop.last %}.{% else %}, {% endif %}
+        {% assign matches = site.data.members.current | where: 'name', a %}
+        {% if matches and matches.size > 0 %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% if forloop.last %}.{% else %}, {% endif %}
       {% endfor %}
     {% elsif authors %}
       — {{ authors }}.
