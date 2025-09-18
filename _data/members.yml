@@ -1,5 +1,5 @@
 current:
-  - slug: graeme-macgilchrist
+- slug: graeme-macgilchrist
   name: Graeme MacGilchrist
   role: Group Lead
   image: /assets/img/people/graeme-macgilchrist.png
@@ -7,16 +7,11 @@ current:
   affiliation: University of St Andrews
   order: 1
   website: https://research-portal.st-andrews.ac.uk/en/persons/graeme-macgilchrist
-    bio: "I am an oceanographer and climate scientist. My research is concerned with mixing processes in the ocean and their implications for climate."
-    understanding how climate-relevant tracers, such as heat and carbon dioxide, are
-    taken up by, stored within, and transported around the ocean. This is achieved
-    by a combination of atmosphere-ocean exchange, the large-scale ocean circulation,
-    turbulent ocean dynamics, and biogeochemical processes. I'm interested in understanding
-    the impact of these processes on the marine environment as well as Earth's climate
-    more broadly. I use a host of tools in my research, including large-scale numerical
-    simulations, process models, theoretical ideas, trajectory analysis, and ocean
-    observations.
-  - slug: caroline-gjelstrup
+  personal: https://gmacgilchrist.github.io/
+  github: gmacgilchrist
+  bluesky: gmacgilchrist
+  substack: gmacgilchrist
+- slug: caroline-gjelstrup
   name: Caroline Gjelstrup
   role: Postdoctoral Research Associate
   image: /assets/img/people/caroline-gjelstrup.png
@@ -24,11 +19,11 @@ current:
   affiliation: University of St Andrews
   order: 2
   website: https://research-portal.st-andrews.ac.uk/en/persons/caroline-gjelstrup
-    bio: "Postdoctoral Research Associate in the School of Earth and Environmental Sciences."
-    & Environmental Sciences https://orcid.org/0000-0002-1590-2192 Phone +44 (0)1334
-    46 Email cvbg1 st-andrews.ac uk School of Earth and Enviro Sciences, Bute Building,
-    Queen's Terrace, St Andrews, KY16 9TS, UK
-  - slug: nelson-poumaere
+  personal:
+  github:
+  bluesky:
+  substack:
+- slug: nelson-poumaere
   name: Nelson Poumaëre
   role: Postdoctoral Research Associate
   image: /assets/img/people/nelson-poumaere.png
@@ -36,11 +31,11 @@ current:
   affiliation: University of St Andrews
   order: 3
   website: https://research-portal.st-andrews.ac.uk/en/persons/nelson-poumaere
-    bio: "Postdoctoral Research Associate in the School of Earth and Environmental Sciences."
-    & Environmental Sciences https://orcid.org/0000-0003-4370-9792 Phone +44 (0)1334
-    46 Email nvjp1 st-andrews.ac uk School of Earth and Enviro Sciences, Bute Building,
-    Queen's Terrace, St Andrews, KY16 9TS, UK
-  - slug: maddie-shankle
+  personal:
+  github:
+  bluesky:
+  substack:
+- slug: maddie-shankle
   name: Maddie Shankle
   role: Postdoctoral Research Associate
   image: /assets/img/people/maddie-shankle.png
@@ -48,41 +43,11 @@ current:
   affiliation: University of St Andrews
   order: 4
   website: https://research-portal.st-andrews.ac.uk/en/persons/maddie-shankle
-    bio: "Postdoctoral Research Associate studying ocean mixing and geophysical fluid dynamics."
-    from Yale University, where she studied on geochemistry and paleoclimatology.
-    She then pursued her interest in the ocean’s impact on climate through an MSc
-    in Physical Oceanography (Distinction) in 2020 at Bangor University. Here she
-    developed a passion for inter-disciplinary research at the nexus of physical circulation
-    and wider ocean biogeochemistry and climate. In her dissertation, Maddie investigated
-    an outstanding question about a future ice-free Arctic by coupling and biogeochemical
-    ocean models to demonstrate the contribution of sea ice retreat and resultant
-    wind-driven mixing on observed trends of increasing primary productivity. Maddie
-    then pursued a PhD at the University of St Andrews, supported by a St Leonard’s
-    World-Leading Doctoral Scholarship. Here she continued conducting multidisciplinary
-    research, studying the role of the Southern Ocean in driving atmospheric CO 2
-    change over the last ice age. Maddie had the unique experience of developing expertise
-    in both proxy data and numerical simulations to explore her research questions.
-    She first quantified glacial deep-ocean carbon content by generating multi-proxy
-    records of pH, temperature, salinity, and other properties over the last ~100
-    thousand years from a deep ocean site. She then ran a suite of numerical simulations
-    of ocean circulation to test various dynamics hypothesized to drive this carbon
-    storage. With a particular focus on the influence of remote forcings (i.e., forces
-    originating in the far-flung North Atlantic and North Pacific) on Southern Ocean
-    conditions, Maddie’s thesis provided a novel perspective on the canonical Southern
-    Ocean processes believed to drive glacial-interglacial CO 2 change. Maddie now
-    works as a post-doctoral researcher in the Ocean Dynamics group within the School
-    of Earth and Environmental Science, continuing to use idealized numerical simulations
-    as tools to investigate fundamental dynamics driving ocean circulation. Her research
-    specifically focuses on identifying the leading forces that govern circulation
-    in high-latitude subpolar gyres (important yet poorly understood features of global
-    ocean circulation, especially when compared to the relatively well-studied subtropical
-    gyres). In this work, Maddie remains motivated by wider questions relevant to
-    ocean biogeochemistry and global climate, such as circulation’s role in carbon
-    and heat uptake in these gyres and how this might change in the future. When she’s
-    not running models, Maddie spends her time serving on the School’s Equality Diversity
-    and Inclusion Committee, supervising undergraduate research, and enjoying hobbies
-    like running and gaming!
-  - slug: xintong-iris-liang
+  personal:
+  github:
+  bluesky:
+  substack:
+- slug: xintong-iris-liang
   name: Xintong Iris Liang
   role: Graduate Student
   image: /assets/img/people/xintong-iris-liang.jpeg
@@ -90,16 +55,10 @@ current:
   affiliation: University of St Andrews
   order: 5
   website: https://research-portal.st-andrews.ac.uk/en/persons/xintong-iris-liang
-    bio: "PhD researcher focusing on how the Southern Ocean circulates tracers (heat, carbon, etc.) and the roles of mesoscale and submesoscale processes."
-    oxygen, nutrients, etc.), including the interaction between different scales of
-    ocean motions, and the spatial and temporal variability. The Southern Ocean is
-    a crucial connection between different ocean basins and between the abyss to the
-    upper ocean and atmosphere. It transports heat, moisture, and carbon around the
-    globe, thus having huge implication on the global climate. I will apply ocean
-    model analysis and theoretical ideas to better understand the mechanisms that
-    drive tracer transport and their potential response to the changing climate. Before
-    coming to St Andrews, I graduated with a Bachelor’s degree in Mathematics from
-    Nanjing University.
+  personal:
+  github:
+  bluesky:
+  substack:
 - slug: freya-gibbon
   name: Freya Gibbon
   role: Graduate Student
@@ -108,7 +67,10 @@ current:
   affiliation: University of St Andrews
   order: 6
   website: null
-  bio: Bio coming soon.
+  personal:
+  github:
+  bluesky:
+  substack:
 - slug: aoife-ni-bhuachalla
   name: Aoife Ní Bhuachalla
   role: Graduate Student
@@ -117,7 +79,10 @@ current:
   affiliation: University of St Andrews
   order: 7
   website: null
-  bio: Bio coming soon.
+  personal:
+  github:
+  bluesky:
+  substack:
 alumni:
 - slug: sample-alumnus
   name: Alex Example
