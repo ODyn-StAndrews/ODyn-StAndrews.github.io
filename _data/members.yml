@@ -67,7 +67,7 @@ current:
   image: /assets/img/people/placeholder.svg
   orcid: null
   affiliation: University of St Andrews
-  order: 6
+  order: 7
   website: null
   personal: null
   github: null
@@ -79,7 +79,7 @@ current:
   image: /assets/img/people/placeholder.svg
   orcid: null
   affiliation: University of St Andrews
-  order: 7
+  order: 8
   website: null
   personal: null
   github: null
@@ -91,7 +91,7 @@ current:
   image: /assets/img/people/andrew-chingos.jpeg
   orcid: 0000-0002-0113-8963
   affiliation: University of St Andrews
-  order: 8
+  order: 6
   website: https://research-portal.st-andrews.ac.uk/en/persons/andrew-eleuftherius-chingos
   personal: null
   github: null
@@ -114,3 +114,24 @@ alumni:
   name: Alex Example
   affiliation: University of Somewhere
   website: https://example.org/
+  image: /assets/img/people/alex-example.svg
+- slug: jamie-taylor
+  name: Jamie Taylor
+  affiliation: Ocean Institute
+  website: null
+  image: /assets/img/people/placeholder.svg
+- slug: priya-kumar
+  name: Priya Kumar
+  affiliation: Climate Lab
+  website: null
+  image: /assets/img/people/placeholder.svg
+- slug: luca-rossi
+  name: Luca Rossi
+  affiliation: Marine Research Centre
+  website: null
+  image: /assets/img/people/placeholder.svg
+- slug: mei-chen
+  name: Mei Chen
+  affiliation: Polar Studies Group
+  website: null
+  image: /assets/img/people/placeholder.svg
