@@ -38,6 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
   // Common refs used below
   const titleLink = document.querySelector('header h1 a');
   const homeIcon = document.querySelector('.nav-home a');
+  const navToggle = document.querySelector('.nav-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
 
   if (isHome) {
     window.addEventListener('scroll', function() {
@@ -117,6 +119,43 @@ document.addEventListener("DOMContentLoaded", function() {
     header.style.setProperty('--uni-logo-height', `${MIN_UNI}px`);
     header.style.setProperty('--title-size', `${MIN_TITLE_REM}rem`);
     header.style.setProperty('--video-opacity', `${MIN_OPACITY}`);
+  }
+
+  // Mobile menu interactions
+  if (navToggle && mobileMenu) {
+    function toggleMenu(force) {
+      const open = (typeof force === 'boolean') ? force : !document.body.classList.contains('menu-open');
+      document.body.classList.toggle('menu-open', open);
+      navToggle.setAttribute('aria-expanded', String(open));
+      if (open) mobileMenu.removeAttribute('hidden'); else mobileMenu.setAttribute('hidden', '');
+    }
+    navToggle.addEventListener('click', () => toggleMenu());
+    // Close when clicking a link
+    mobileMenu.addEventListener('click', (e) => {
+      const a = e.target.closest('a');
+      if (!a) return;
+      // Smooth-scroll for internal anchors when on home
+      try {
+        const u = new URL(a.getAttribute('href'), window.location.origin);
+        const hash = u.hash;
+        if (hash && (isHome || u.pathname.endsWith('/index.html') || u.pathname === '/')) {
+          const id = hash.slice(1);
+          const sec = document.getElementById(id);
+          if (sec) {
+            e.preventDefault();
+            toggleMenu(false);
+            sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            return;
+          }
+        }
+      } catch(_) {}
+      // Otherwise just close and let navigation proceed
+      toggleMenu(false);
+    });
+    // Close on ESC
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') toggleMenu(false); });
+    // Close menu when resizing to desktop
+    window.addEventListener('resize', () => { if (window.innerWidth > 640) toggleMenu(false); });
   }
 
   // Simple lightbox for research galleries
