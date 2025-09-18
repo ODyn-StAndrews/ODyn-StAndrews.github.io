@@ -1,0 +1,10 @@
+# Add group members here. Prefer ORCID for reliable matching.
+# Example entry structure:
+# - name: Full Name
+#   orcid: 0000-0000-0000-0000   # optional but recommended
+#   crossref_query: optional additional query terms (affiliation, keywords)
+
+- name: Graeme MacGilchrist
+  # orcid: 0000-0000-0000-0000   # TODO: add if you have it
+  crossref_query: University of St Andrews
+

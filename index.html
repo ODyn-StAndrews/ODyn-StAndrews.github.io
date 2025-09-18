@@ -23,7 +23,18 @@ title: Ocean Dynamics @ St Andrews
 
 <section id="publications">
   <h2>Publications</h2>
-  <p>Find our latest publications here.</p>
+  {% assign data = site.data.publications %}
+  {% if data and data.items and data.items.size > 0 %}
+    <ul class="pub-list">
+      {% assign recent = data.items | slice: 0, 10 %}
+      {% for p in recent %}
+        {% include publication_item.html title=p.title authors=p.authors venue=p.venue year=p.year doi=p.doi url=p.url %}
+      {% endfor %}
+    </ul>
+    <p><small>Updated {{ data.generated_at }}</small></p>
+  {% else %}
+    <p>No publications found yet. Once the updater runs, recent items will appear here.</p>
+  {% endif %}
 </section>
 
 <section id="people">
