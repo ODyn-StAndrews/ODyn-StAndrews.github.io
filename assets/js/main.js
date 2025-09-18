@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Active nav highlighting via IntersectionObserver (restored)
     const links = Array.from(document.querySelectorAll('nav a[href*="#"]'));
+    const homeLink = document.querySelector('.nav-home a');
     const map = new Map();
     links.forEach(l => {
       try {
@@ -59,13 +60,20 @@ document.addEventListener("DOMContentLoaded", function() {
       } catch (_) {}
     });
 
+    function clearActive() { links.forEach(l => l.classList.remove('active')); if (homeLink) homeLink.classList.remove('active'); }
     function setActive(id) {
-      links.forEach(l => l.classList.remove('active'));
+      clearActive();
       const item = map.get(id);
       if (item) item.link.classList.add('active');
     }
+    function setActiveHome() { clearActive(); if (homeLink) homeLink.classList.add('active'); }
 
     const observer = new IntersectionObserver((entries) => {
+      // If at (or very near) top, highlight Home icon
+      if ((window.scrollY || window.pageYOffset || 0) <= 10) {
+        setActiveHome();
+        return;
+      }
       // Choose the entry whose top is closest to the top and is intersecting
       let candidate = null;
       let minTop = Infinity;
@@ -94,6 +102,11 @@ document.addEventListener("DOMContentLoaded", function() {
       const id = (u.hash || '').slice(1);
       if (id) setActive(id);
     }));
+
+    // Also set Home active immediately when clicking title or home icon
+    if (titleLink) titleLink.addEventListener('click', () => setActiveHome());
+    const homeIconLink = document.querySelector('.nav-home a');
+    if (homeIconLink) homeIconLink.addEventListener('click', () => setActiveHome());
   } else {
     // Static, compact header for non-home pages
     header.classList.add('static', 'compact');
