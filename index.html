@@ -61,6 +61,8 @@ title: Ocean Dynamics @ St Andrews
 
 <section id="news">
   <h2>News</h2>
+  <div class="news-layout">
+  <div class="news-col">
   <ul class="news-list">
     {% assign items = site.collections.news.docs %}
     {% if items == nil %}{% assign items = site.news %}{% endif %}
@@ -81,6 +83,20 @@ title: Ocean Dynamics @ St Andrews
   {% unless items and items.size > 0 %}
     <p>No news yet.</p>
   {% endunless %}
+  </div>
+  <aside class="gallery-col">
+    <h3 class="gallery-title">Gallery</h3>
+    {% assign g = site.data.gallery.items | sort: 'date' | reverse | slice: 0, 6 %}
+    <div class="gallery-thumbs">
+      {% for img in g %}
+        <a href="{{ img.file }}" class="gallery-item" data-caption="{{ img.caption | escape }}" title="{{ img.caption }}">
+          <img src="{{ img.file }}" alt="{{ img.caption }}">
+          <span class="thumb-caption">{{ img.caption }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </aside>
+  </div>
   </section>
 
 <section id="publications">
