@@ -8,15 +8,15 @@
       —
       {% for a in include.authors_list %}
         {%- comment -%} Normalize author: lowercase, remove spaces, periods, commas {%- endcomment -%}
-        {% assign author_norm = a | downcase | strip | replace: ' ', '' | replace: '.', '' | replace: ',', '' | replace: '-', '' %}
+        {% assign author_norm = a | downcase | strip | slugify | replace: '-', '' %}
         {% assign is_member = false %}
         {% for m in site.data.members.current %}
-          {% assign full_norm = m.name | downcase | strip | replace: ' ', '' | replace: '.', '' | replace: ',', '' | replace: '-', '' %}
+          {% assign full_norm = m.name | downcase | strip | slugify | replace: '-', '' %}
           {% assign parts = m.name | downcase | strip | split: ' ' %}
           {% assign first = parts | first %}
           {% assign last = parts | last %}
           {% assign fi = first | slice: 0,1 %}
-          {% assign last_norm = last | replace: ' ', '' | replace: '.', '' | replace: ',', '' | replace: '-', '' %}
+          {% assign last_norm = last | slugify | replace: '-', '' %}
           {% assign pat1 = fi | append: last_norm %}
           {% assign pat2 = last_norm | append: fi %}
           {% if author_norm == full_norm or author_norm contains pat1 or author_norm contains pat2 %}
