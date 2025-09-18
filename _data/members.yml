@@ -13,6 +13,9 @@ current:
   substack: gmacgilchrist
   scholar: https://scholar.google.com/citations?user=wdHpW64AAAAJ&hl=en
   linkedin: https://www.linkedin.com/in/graeme-macgilchrist-a139a72a0/
+  aliases:
+    - Graeme A. MacGilchrist
+    - Graeme A Macgilchrist
 - slug: caroline-gjelstrup
   name: Caroline Gjelstrup
   role: Postdoctoral Research Associate
@@ -25,6 +28,8 @@ current:
   github:
   bluesky:
   substack:
+  aliases: 
+    - Caroline V.B. Gjelstrup
 - slug: nelson-poumaere
   name: Nelson Poumaëre
   role: Postdoctoral Research Associate
@@ -49,6 +54,9 @@ current:
   github:
   bluesky:
   substack:
+  aliases:
+    - Madison G. Shankle
+    - Madison Shankle
 - slug: xintong-iris-liang
   name: Xintong Iris Liang
   role: Graduate Student

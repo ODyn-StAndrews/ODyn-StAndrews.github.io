@@ -7,8 +7,23 @@
     {% if include.authors_list %}
       —
       {% for a in include.authors_list %}
-        {% assign matches = site.data.members.current | where: 'name', a %}
-        {% if matches and matches.size > 0 %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% if forloop.last %}.{% else %}, {% endif %}
+        {% assign author_lc = a | downcase | strip %}
+        {% assign is_member = false %}
+        {% for m in site.data.members.current %}
+          {% assign name_lc = m.name | downcase | strip %}
+          {% if author_lc == name_lc %}
+            {% assign is_member = true %}
+          {% endif %}
+          {% if m.aliases %}
+            {% for alias in m.aliases %}
+              {% assign alias_lc = alias | downcase | strip %}
+              {% if author_lc == alias_lc %}
+                {% assign is_member = true %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+        {% if is_member %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% if forloop.last %}.{% else %}, {% endif %}
       {% endfor %}
     {% elsif authors %}
       — {{ authors }}.
