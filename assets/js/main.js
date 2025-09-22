@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Also set Home active immediately when clicking title or home icon
     if (titleLink) titleLink.addEventListener('click', () => setActiveHome());
     if (homeIcon) homeIcon.addEventListener('click', () => setActiveHome());
-  } else {
+  } else if (!isMobile) {
     // Static, compact header for non-home pages
     header.classList.add('static', 'compact');
     header.style.setProperty('--header-height', `${MIN_H}px`);

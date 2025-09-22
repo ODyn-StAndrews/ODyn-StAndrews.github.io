@@ -80,8 +80,8 @@ nav ul li a.active { color: var(--accent-1); border-bottom-color: var(--accent-1
 
 /* Mobile menu drawer */
 .mobile-menu { position: fixed; top: var(--header-height, 110px); left: 0; right: 0; background: #0c223a; border-top: 1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 24px rgba(0,0,0,0.35); z-index: 1500; padding: 12px 20px; max-height: 70vh; overflow: auto; }
-.mobile-menu nav ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
-.mobile-menu nav a { color: #fff; text-decoration: none; font-weight: 600; font-size: 1rem; padding: 6px 0; display: block; }
+.mobile-menu nav ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; justify-items: center; }
+.mobile-menu nav a { color: #fff; text-decoration: none; font-weight: 600; font-size: 1rem; padding: 6px 0; display: inline-block; text-align: center; }
 
 /* Responsive behavior for small screens */
 @media (max-width: 640px) {
@@ -90,12 +90,12 @@ nav ul li a.active { color: var(--accent-1); border-bottom-color: var(--accent-1
   .university-logo { display: none; }
   header > nav { display: none; }
   .nav-toggle { display: inline-flex; }
-  header { height: 64px !important; padding: 0 16px; }
+  header { height: 64px !important; padding: 0 16px; position: fixed; top: 0; left: 0; right: 0; }
   .large-logo { height: 40px; width: 40px; }
   header::after { background: none; }
   header video { display: none; }
   /* Push content appropriately for compact header */
-  #about { margin-top: 80px; scroll-margin-top: 80px; }
+  #about { margin-top: 64px; scroll-margin-top: 64px; }
   /* Ensure mobile menu aligns to compact header */
   .mobile-menu { top: 64px !important; }
 }
