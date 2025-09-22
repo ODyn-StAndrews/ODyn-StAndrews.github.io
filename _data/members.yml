@@ -23,8 +23,10 @@ current:
   website: https://research-portal.st-andrews.ac.uk/en/persons/caroline-gjelstrup
   personal: null
   github: null
-  bluesky: null
   substack: null
+  bluesky: cgjelstrup
+  scholar: https://scholar.google.com/citations?hl=en&user=pldcErEAAAAJ
+  linkedin: https://www.linkedin.com/in/caroline-gjelstrup-77487620b/
 - slug: nelson-poumaere
   name: Nelson Poumaëre
   role: Postdoctoral Research Associate
@@ -34,7 +36,7 @@ current:
   order: 3
   website: https://research-portal.st-andrews.ac.uk/en/persons/nelson-poumaere
   personal: null
-  github: null
+  github: NelsonPoumaere
   bluesky: null
   substack: null
 - slug: maddie-shankle
@@ -46,9 +48,11 @@ current:
   order: 4
   website: https://research-portal.st-andrews.ac.uk/en/persons/maddie-shankle
   personal: null
-  github: null
+  github: Maddie-Sh
   bluesky: null
   substack: null
+  scholar: https://scholar.google.com/citations?user=ckTNJ2UAAAAJ&hl=en&oi=ao
+  linkedin: https://www.linkedin.com/in/madisonshankle/
 - slug: xintong-iris-liang
   name: Xintong Iris Liang
   role: Graduate Student
@@ -57,22 +61,23 @@ current:
   affiliation: University of St Andrews
   order: 5
   website: https://research-portal.st-andrews.ac.uk/en/persons/xintong-iris-liang
-  personal: null
-  github: null
+  personal: https://xliang576.github.io/
+  github: xliang576
   bluesky: null
   substack: null
 - slug: freya-gibbon
   name: Freya Gibbon
   role: Graduate Student
-  image: /assets/img/people/placeholder.svg
+  image: /assets/img/people/freya-gibbon.jpeg
   orcid: null
   affiliation: University of St Andrews
   order: 7
   website: null
   personal: null
-  github: null
+  github: freyagibbon03
   bluesky: null
   substack: null
+  linkedin: https://www.linkedin.com/in/freya-gibbon-361a96339
 - slug: aoife-ni-bhuachalla
   name: Aoife Ní Bhuachalla
   role: Graduate Student
@@ -94,9 +99,10 @@ current:
   order: 6
   website: https://research-portal.st-andrews.ac.uk/en/persons/andrew-eleuftherius-chingos
   personal: null
-  github: null
+  github: chingosa
   bluesky: null
   substack: null
+  linkedin: https://www.linkedin.com/in/andrew-chingos-396032203/
 - slug: rose-gallichan
   name: Rose Gallichan
   role: Undergraduate Researcher
