@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // On mobile (home or not), enforce compact, static header vars
   if (isMobile) {
-    header.classList.add('static', 'compact');
+    header.classList.add('compact');
     header.style.setProperty('--header-height', `64px`);
     header.style.setProperty('--logo-size', `40px`);
     header.style.setProperty('--uni-logo-height', `36px`);
