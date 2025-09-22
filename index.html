@@ -10,7 +10,7 @@ title: Ocean Dynamics @ St Andrews
     <div class="about-text">
       <p>The Ocean Dynamics group at the <a href="https://www.st-andrews.ac.uk/" target="_blank" rel="noopener">University of St Andrews</a> studies the ocean from the beautiful coastal town of St Andrews, in Scotland. We're based in the <a href="https://www.st-andrews.ac.uk/earth-sciences/" target="_blank" rel="noopener">School of Earth and Environmental Sciences</a> and participate as part of <a href="https://www.st-andrews.ac.uk/earth-sciences/research/centres/coast/" target="_blank" rel="noopener">COASt</a> (Climate, Oceans, and Atmosphere @ St Andrews). You can find lots of technical info about our group on <a href="https://odyn-standrews.github.io/wiki/" target="_blank" rel="noopener">our wiki page</a>, or scroll on to learn more about our research, team members, and recent news!</p>
     </div>
-    <img class="about-hero" src="/assets/img/about/standrews-bay.svg" alt="St Andrews Bay">
+    <img class="about-hero" src="/assets/img/about/standrews-bay.svg" alt="St Andrews Bay" loading="lazy">
   </div>
 </section>
 
@@ -90,7 +90,7 @@ title: Ocean Dynamics @ St Andrews
     <div class="gallery-thumbs">
       {% for img in g %}
         <a href="{{ img.file }}" class="gallery-item" data-caption="{{ img.caption | escape }}" title="{{ img.caption }}">
-          <img src="{{ img.file }}" alt="{{ img.caption }}">
+          <img src="{{ img.file }}" alt="{{ img.caption }}" loading="lazy">
           <span class="thumb-caption">{{ img.caption }}</span>
         </a>
       {% endfor %}

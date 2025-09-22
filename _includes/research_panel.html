@@ -1,5 +1,5 @@
 <div class="research-panel{% if include.reverse == 1 %} reverse{% endif %}">
-  <img class="research-hero" src="{{ include.image | default: '/assets/img/research/placeholder1.svg' }}" alt="{{ include.title }}">
+  <img class="research-hero" src="{{ include.image | default: '/assets/img/research/placeholder1.svg' }}" alt="{{ include.title }}" loading="lazy">
   <div class="research-text">
     <h3>{{ include.title }}</h3>
     {% if include.summary %}
@@ -12,7 +12,7 @@
   <div class="gallery-side">
     {% for g in include.images %}
       <a href="{{ g.url }}" class="gallery-item" data-caption="{{ g.caption | escape }}">
-        <img src="{{ g.url }}" alt="{{ g.caption | default: include.title }}">
+        <img src="{{ g.url }}" alt="{{ g.caption | default: include.title }}" loading="lazy">
       </a>
     {% endfor %}
   </div>

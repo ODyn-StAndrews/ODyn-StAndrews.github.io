@@ -20,7 +20,12 @@
           {% assign first_norm = first | slugify | replace: '-', '' %}
           {% assign pat1 = fi | append: last_norm %}
           {% assign pat2 = last_norm | append: fi %}
-          {% if author_norm == full_norm or author_norm contains pat1 or author_norm contains pat2 or (author_norm contains first_norm and author_norm contains last_norm) %}
+          {% assign pre_last = author_norm | split: last_norm | first %}
+          {% if author_norm == full_norm
+                or author_norm contains pat1
+                or author_norm contains pat2
+                or (author_norm contains last_norm and pre_last contains fi)
+                or (author_norm contains last_norm and pre_last contains first_norm) %}
             {% assign is_member = true %}
           {% endif %}
         {% endfor %}

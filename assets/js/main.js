@@ -35,13 +35,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const path = window.location.pathname || '/';
   const isHome = (path === '/' || path.endsWith('/index.html'));
+  const isMobile = window.matchMedia && window.matchMedia('(max-width: 640px)').matches;
   // Common refs used below
   const titleLink = document.querySelector('header h1 a');
   const homeIcon = document.querySelector('.nav-home a');
   const navToggle = document.querySelector('.nav-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
 
-  if (isHome) {
+  if (isHome && !isMobile) {
     window.addEventListener('scroll', function() {
       if (!ticking) {
         window.requestAnimationFrame(onScroll);
@@ -111,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Also set Home active immediately when clicking title or home icon
     if (titleLink) titleLink.addEventListener('click', () => setActiveHome());
     if (homeIcon) homeIcon.addEventListener('click', () => setActiveHome());
-  } else {
+  } else if (!isMobile) {
     // Static, compact header for non-home pages
     header.classList.add('static', 'compact');
     header.style.setProperty('--header-height', `${MIN_H}px`);
@@ -119,6 +120,16 @@ document.addEventListener("DOMContentLoaded", function() {
     header.style.setProperty('--uni-logo-height', `${MIN_UNI}px`);
     header.style.setProperty('--title-size', `${MIN_TITLE_REM}rem`);
     header.style.setProperty('--video-opacity', `${MIN_OPACITY}`);
+  }
+
+  // On mobile (home or not), enforce compact, static header vars
+  if (isMobile) {
+    header.classList.add('compact');
+    header.style.setProperty('--header-height', `64px`);
+    header.style.setProperty('--logo-size', `40px`);
+    header.style.setProperty('--uni-logo-height', `36px`);
+    header.style.setProperty('--title-size', `1.6rem`);
+    header.style.setProperty('--video-opacity', `0`);
   }
 
   // Mobile menu interactions
