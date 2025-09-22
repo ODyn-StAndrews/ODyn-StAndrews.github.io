@@ -93,11 +93,15 @@ nav ul li a.active { color: var(--accent-1); border-bottom-color: var(--accent-1
   header { height: 64px !important; padding: 0 16px; }
   .large-logo { height: 40px; width: 40px; }
   header::after { background: none; }
+  header video { display: none; }
 }
 
 /* When mobile menu open */
 body.menu-open #mobile-menu { display: block; }
 body.menu-open #mobile-menu[hidden] { display: block; }
+@media (max-width: 640px) {
+  body.menu-open::before { content: ""; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 1400; }
+}
 main { display: block; }
 section { padding: 64px 50px; margin: 0; scroll-margin-top: 110px; }
 #about { margin-top: 410px; scroll-margin-top: 110px; }
@@ -142,8 +146,11 @@ section:nth-of-type(even) h2 { color: var(--accent-2); }
 .people-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 16px;
+  gap: 22px;
   align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 12px;
 }
 
 /* Alumni grid tweaks: smaller tiles and tighter overlay text */
