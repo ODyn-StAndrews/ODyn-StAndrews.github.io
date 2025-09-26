@@ -81,15 +81,16 @@ current:
 - slug: aoife-ni-bhuachalla
   name: Aoife Ní Bhuachalla
   role: Graduate Student
-  image: /assets/img/people/placeholder.svg
+  image: /assets/img/people/aoife-ni-bhuachalla.jpeg
   orcid: null
   affiliation: University of St Andrews
   order: 8
   website: null
   personal: null
-  github: null
+  github: aoifenibhuachalla
   bluesky: null
   substack: null
+  linkedin: https://www.linkedin.com/aoife-ni-bhuachalla
 - slug: andrew-chingos
   name: Andrew Chingos
   role: Graduate Student
