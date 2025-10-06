@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-09-29T03:44:10.820464Z",
-  "count": 27,
+  "generated_at": "2025-10-06T03:41:49.323695Z",
+  "count": 28,
   "items": [
     {
       "title": "Water Mass Transformation Budgets in Finite\u2010Volume Generalized Vertical Coordinate Ocean Models",
@@ -20,6 +20,24 @@
       "year": 2025,
       "doi": "10.1029/2024ms004383",
       "url": "https://doi.org/10.1029/2024ms004383",
+      "type": "journal-article"
+    },
+    {
+      "title": "The East Greenland Polar Front as a Mediator of Climate\u2010Ocean\u2010Ecosystem Variability Along Southeast Greenland",
+      "authors": "C. V. B. Gjelstrup, J. Boje, B. R. MacKenzie, S. Post, K. M. Werner, A. W. Visser, C. A. Stedmon",
+      "authors_list": [
+        "C. V. B. Gjelstrup",
+        "J. Boje",
+        "B. R. MacKenzie",
+        "S. Post",
+        "K. M. Werner",
+        "A. W. Visser",
+        "C. A. Stedmon"
+      ],
+      "venue": "Journal of Geophysical Research: Oceans",
+      "year": 2025,
+      "doi": "10.1029/2025jc022669",
+      "url": "https://doi.org/10.1029/2025jc022669",
       "type": "journal-article"
     },
     {
