@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-12-29T04:17:39.561872Z",
-  "count": 23,
+  "generated_at": "2026-01-05T04:33:47.659311Z",
+  "count": 28,
   "items": [
     {
       "title": "Water Mass Transformation Budgets in Finite\u2010Volume Generalized Vertical Coordinate Ocean Models",
@@ -124,6 +124,49 @@
       "year": 2024,
       "doi": "10.1038/s43247-024-01207-y",
       "url": "https://doi.org/10.1038/s43247-024-01207-y",
+      "type": "journal-article"
+    },
+    {
+      "title": "Residence time distributions in unstable channel flow",
+      "authors": "Nelson Pouma\u00ebre, Beno\u00eet Pier, Florence Raynal",
+      "authors_list": [
+        "Nelson Pouma\u00ebre",
+        "Beno\u00eet Pier",
+        "Florence Raynal"
+      ],
+      "venue": "Physical Review Fluids",
+      "year": 2024,
+      "doi": "10.1103/physrevfluids.9.104501",
+      "url": "https://doi.org/10.1103/physrevfluids.9.104501",
+      "type": "journal-article"
+    },
+    {
+      "title": "Connectivity between Siberian river runoff and the lower limb of the Atlantic Meridional Overturning Circulation",
+      "authors": "Caroline V. B. Gjelstrup, Paul G. Myers, Craig M. Lee, Kumiko Azetsu\u2010Scott, Colin A. Stedmon",
+      "authors_list": [
+        "Caroline V. B. Gjelstrup",
+        "Paul G. Myers",
+        "Craig M. Lee",
+        "Kumiko Azetsu\u2010Scott",
+        "Colin A. Stedmon"
+      ],
+      "venue": "Limnology and Oceanography",
+      "year": 2024,
+      "doi": "10.1002/lno.12696",
+      "url": "https://doi.org/10.1002/lno.12696",
+      "type": "journal-article"
+    },
+    {
+      "title": "A switch in thermal and haline contributions to stratification in the Greenland Sea during the last four decades",
+      "authors": "Caroline V.B. Gjelstrup, Colin A. Stedmon",
+      "authors_list": [
+        "Caroline V.B. Gjelstrup",
+        "Colin A. Stedmon"
+      ],
+      "venue": "Progress in Oceanography",
+      "year": 2024,
+      "doi": "10.1016/j.pocean.2024.103283",
+      "url": "https://doi.org/10.1016/j.pocean.2024.103283",
       "type": "journal-article"
     },
     {
@@ -254,6 +297,20 @@
       "type": "journal-article"
     },
     {
+      "title": "Residence time distributions for in-line chaotic mixers",
+      "authors": "Nelson Pouma\u00ebre, Beno\u00eet Pier, Florence Raynal",
+      "authors_list": [
+        "Nelson Pouma\u00ebre",
+        "Beno\u00eet Pier",
+        "Florence Raynal"
+      ],
+      "venue": "Physical Review E",
+      "year": 2022,
+      "doi": "10.1103/physreve.106.015107",
+      "url": "https://doi.org/10.1103/physreve.106.015107",
+      "type": "journal-article"
+    },
+    {
       "title": "Importance of the Antarctic Slope Current in the Southern Ocean Response to Ice Sheet Melt and Wind Stress Change",
       "authors": "R. L. Beadling, J. P. Krasting, S. M. Griffies, W. J. Hurlin, B. Bronselaer, J. L. Russell, G. A. MacGilchrist, J.\u2010E. Tesdal, M. Winton",
       "authors_list": [
@@ -271,6 +328,27 @@
       "year": 2022,
       "doi": "10.1029/2021jc017608",
       "url": "https://doi.org/10.1029/2021jc017608",
+      "type": "journal-article"
+    },
+    {
+      "title": "A regime shift in the Southeast Greenland marine ecosystem",
+      "authors": "Mads Peter Heide\u2010J\u00f8rgensen, Philippine Chambault, Teunis Jansen, Caroline V. B. Gjelstrup, Aqqalu Rosing\u2010Asvid, Andreas Macrander, G\u00edsli V\u00edkingsson, Xiangdong Zhang, Camilla S. Andresen, Brian R. MacKenzie",
+      "authors_list": [
+        "Mads Peter Heide\u2010J\u00f8rgensen",
+        "Philippine Chambault",
+        "Teunis Jansen",
+        "Caroline V. B. Gjelstrup",
+        "Aqqalu Rosing\u2010Asvid",
+        "Andreas Macrander",
+        "G\u00edsli V\u00edkingsson",
+        "Xiangdong Zhang",
+        "Camilla S. Andresen",
+        "Brian R. MacKenzie"
+      ],
+      "venue": "Global Change Biology",
+      "year": 2022,
+      "doi": "10.1111/gcb.16494",
+      "url": "https://doi.org/10.1111/gcb.16494",
       "type": "journal-article"
     },
     {
