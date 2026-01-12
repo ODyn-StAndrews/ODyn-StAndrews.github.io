@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-01-05T04:33:47.659311Z",
-  "count": 28,
+  "generated_at": "2026-01-12T04:18:45.534876Z",
+  "count": 26,
   "items": [
     {
       "title": "Water Mass Transformation Budgets in Finite\u2010Volume Generalized Vertical Coordinate Ocean Models",
@@ -20,24 +20,6 @@
       "year": 2025,
       "doi": "10.1029/2024ms004383",
       "url": "https://doi.org/10.1029/2024ms004383",
-      "type": "journal-article"
-    },
-    {
-      "title": "The East Greenland Polar Front as a Mediator of Climate\u2010Ocean\u2010Ecosystem Variability Along Southeast Greenland",
-      "authors": "C. V. B. Gjelstrup, J. Boje, B. R. MacKenzie, S. Post, K. M. Werner, A. W. Visser, C. A. Stedmon",
-      "authors_list": [
-        "C. V. B. Gjelstrup",
-        "J. Boje",
-        "B. R. MacKenzie",
-        "S. Post",
-        "K. M. Werner",
-        "A. W. Visser",
-        "C. A. Stedmon"
-      ],
-      "venue": "Journal of Geophysical Research: Oceans",
-      "year": 2025,
-      "doi": "10.1029/2025jc022669",
-      "url": "https://doi.org/10.1029/2025jc022669",
       "type": "journal-article"
     },
     {
@@ -124,20 +106,6 @@
       "year": 2024,
       "doi": "10.1038/s43247-024-01207-y",
       "url": "https://doi.org/10.1038/s43247-024-01207-y",
-      "type": "journal-article"
-    },
-    {
-      "title": "Residence time distributions in unstable channel flow",
-      "authors": "Nelson Pouma\u00ebre, Beno\u00eet Pier, Florence Raynal",
-      "authors_list": [
-        "Nelson Pouma\u00ebre",
-        "Beno\u00eet Pier",
-        "Florence Raynal"
-      ],
-      "venue": "Physical Review Fluids",
-      "year": 2024,
-      "doi": "10.1103/physrevfluids.9.104501",
-      "url": "https://doi.org/10.1103/physrevfluids.9.104501",
       "type": "journal-article"
     },
     {
