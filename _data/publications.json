@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-01-26T04:33:36.585233Z",
-  "count": 28,
+  "generated_at": "2026-02-02T05:06:32.942967Z",
+  "count": 20,
   "items": [
     {
       "title": "Water Mass Transformation Budgets in Finite\u2010Volume Generalized Vertical Coordinate Ocean Models",
@@ -20,24 +20,6 @@
       "year": 2025,
       "doi": "10.1029/2024ms004383",
       "url": "https://doi.org/10.1029/2024ms004383",
-      "type": "journal-article"
-    },
-    {
-      "title": "The East Greenland Polar Front as a Mediator of Climate\u2010Ocean\u2010Ecosystem Variability Along Southeast Greenland",
-      "authors": "C. V. B. Gjelstrup, J. Boje, B. R. MacKenzie, S. Post, K. M. Werner, A. W. Visser, C. A. Stedmon",
-      "authors_list": [
-        "C. V. B. Gjelstrup",
-        "J. Boje",
-        "B. R. MacKenzie",
-        "S. Post",
-        "K. M. Werner",
-        "A. W. Visser",
-        "C. A. Stedmon"
-      ],
-      "venue": "Journal of Geophysical Research: Oceans",
-      "year": 2025,
-      "doi": "10.1029/2025jc022669",
-      "url": "https://doi.org/10.1029/2025jc022669",
       "type": "journal-article"
     },
     {
@@ -127,20 +109,6 @@
       "type": "journal-article"
     },
     {
-      "title": "Residence time distributions in unstable channel flow",
-      "authors": "Nelson Pouma\u00ebre, Beno\u00eet Pier, Florence Raynal",
-      "authors_list": [
-        "Nelson Pouma\u00ebre",
-        "Beno\u00eet Pier",
-        "Florence Raynal"
-      ],
-      "venue": "Physical Review Fluids",
-      "year": 2024,
-      "doi": "10.1103/physrevfluids.9.104501",
-      "url": "https://doi.org/10.1103/physrevfluids.9.104501",
-      "type": "journal-article"
-    },
-    {
       "title": "Connectivity between Siberian river runoff and the lower limb of the Atlantic Meridional Overturning Circulation",
       "authors": "Caroline V. B. Gjelstrup, Paul G. Myers, Craig M. Lee, Kumiko Azetsu\u2010Scott, Colin A. Stedmon",
       "authors_list": [
@@ -154,40 +122,6 @@
       "year": 2024,
       "doi": "10.1002/lno.12696",
       "url": "https://doi.org/10.1002/lno.12696",
-      "type": "journal-article"
-    },
-    {
-      "title": "A switch in thermal and haline contributions to stratification in the Greenland Sea during the last four decades",
-      "authors": "Caroline V.B. Gjelstrup, Colin A. Stedmon",
-      "authors_list": [
-        "Caroline V.B. Gjelstrup",
-        "Colin A. Stedmon"
-      ],
-      "venue": "Progress in Oceanography",
-      "year": 2024,
-      "doi": "10.1016/j.pocean.2024.103283",
-      "url": "https://doi.org/10.1016/j.pocean.2024.103283",
-      "type": "journal-article"
-    },
-    {
-      "title": "A Simple, Low\u2010Blank Batch Purification Method for High\u2010Precision Boron Isotope Analysis",
-      "authors": "M. Trudgill, S. Nuber, H. E. Block, J. Crumpton\u2010Banks, H. Jurikova, E. Littley, M. Shankle, C. Xu, R. C. J. Steele, J. W. B. Rae",
-      "authors_list": [
-        "M. Trudgill",
-        "S. Nuber",
-        "H. E. Block",
-        "J. Crumpton\u2010Banks",
-        "H. Jurikova",
-        "E. Littley",
-        "M. Shankle",
-        "C. Xu",
-        "R. C. J. Steele",
-        "J. W. B. Rae"
-      ],
-      "venue": "Geochemistry, Geophysics, Geosystems",
-      "year": 2024,
-      "doi": "10.1029/2023gc011350",
-      "url": "https://doi.org/10.1029/2023gc011350",
       "type": "journal-article"
     },
     {
@@ -262,55 +196,6 @@
       "type": "journal-article"
     },
     {
-      "title": "Vertical redistribution of principle water masses on the Northeast Greenland Shelf",
-      "authors": "Caroline V. B. Gjelstrup, Mikael K. Sejr, Laura de Steur, J\u00f8rgen Schou Christiansen, Mats A. Granskog, Boris P. Koch, Eva Friis M\u00f8ller, Mie H. S. Winding, Colin A. Stedmon",
-      "authors_list": [
-        "Caroline V. B. Gjelstrup",
-        "Mikael K. Sejr",
-        "Laura de Steur",
-        "J\u00f8rgen Schou Christiansen",
-        "Mats A. Granskog",
-        "Boris P. Koch",
-        "Eva Friis M\u00f8ller",
-        "Mie H. S. Winding",
-        "Colin A. Stedmon"
-      ],
-      "venue": "Nature Communications",
-      "year": 2022,
-      "doi": "10.1038/s41467-022-35413-z",
-      "url": "https://doi.org/10.1038/s41467-022-35413-z",
-      "type": "journal-article"
-    },
-    {
-      "title": "Separating Annual, Interannual and Regional Change in Sea Surface Temperature in the Northeastern Atlantic and Nordic Seas",
-      "authors": "Mischa J. M. Saes, Caroline V. B. Gjelstrup, Andre W. Visser, Colin A. Stedmon",
-      "authors_list": [
-        "Mischa J. M. Saes",
-        "Caroline V. B. Gjelstrup",
-        "Andre W. Visser",
-        "Colin A. Stedmon"
-      ],
-      "venue": "Journal of Geophysical Research: Oceans",
-      "year": 2022,
-      "doi": "10.1029/2022jc018630",
-      "url": "https://doi.org/10.1029/2022jc018630",
-      "type": "journal-article"
-    },
-    {
-      "title": "Residence time distributions for in-line chaotic mixers",
-      "authors": "Nelson Pouma\u00ebre, Beno\u00eet Pier, Florence Raynal",
-      "authors_list": [
-        "Nelson Pouma\u00ebre",
-        "Beno\u00eet Pier",
-        "Florence Raynal"
-      ],
-      "venue": "Physical Review E",
-      "year": 2022,
-      "doi": "10.1103/physreve.106.015107",
-      "url": "https://doi.org/10.1103/physreve.106.015107",
-      "type": "journal-article"
-    },
-    {
       "title": "Importance of the Antarctic Slope Current in the Southern Ocean Response to Ice Sheet Melt and Wind Stress Change",
       "authors": "R. L. Beadling, J. P. Krasting, S. M. Griffies, W. J. Hurlin, B. Bronselaer, J. L. Russell, G. A. MacGilchrist, J.\u2010E. Tesdal, M. Winton",
       "authors_list": [
@@ -349,27 +234,6 @@
       "year": 2022,
       "doi": "10.1111/gcb.16494",
       "url": "https://doi.org/10.1111/gcb.16494",
-      "type": "journal-article"
-    },
-    {
-      "title": "Pliocene decoupling of equatorial Pacific temperature and pH gradients",
-      "authors": "Madison G. Shankle, Natalie J. Burls, Alexey V. Fedorov, Matthew D. Thomas, Wei Liu, Donald E. Penman, Heather L. Ford, Peter H. Jacobs, Noah J. Planavsky, Pincelli M. Hull",
-      "authors_list": [
-        "Madison G. Shankle",
-        "Natalie J. Burls",
-        "Alexey V. Fedorov",
-        "Matthew D. Thomas",
-        "Wei Liu",
-        "Donald E. Penman",
-        "Heather L. Ford",
-        "Peter H. Jacobs",
-        "Noah J. Planavsky",
-        "Pincelli M. Hull"
-      ],
-      "venue": "Nature",
-      "year": 2021,
-      "doi": "10.1038/s41586-021-03884-7",
-      "url": "https://doi.org/10.1038/s41586-021-03884-7",
       "type": "journal-article"
     },
     {
