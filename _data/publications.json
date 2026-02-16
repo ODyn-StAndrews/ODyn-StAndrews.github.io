@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-09T05:10:58.573473Z",
-  "count": 26,
+  "generated_at": "2026-02-16T05:09:39.163930Z",
+  "count": 28,
   "items": [
     {
       "title": "Water Mass Transformation Budgets in Finite\u2010Volume Generalized Vertical Coordinate Ocean Models",
@@ -170,6 +170,27 @@
       "type": "journal-article"
     },
     {
+      "title": "A Simple, Low\u2010Blank Batch Purification Method for High\u2010Precision Boron Isotope Analysis",
+      "authors": "M. Trudgill, S. Nuber, H. E. Block, J. Crumpton\u2010Banks, H. Jurikova, E. Littley, M. Shankle, C. Xu, R. C. J. Steele, J. W. B. Rae",
+      "authors_list": [
+        "M. Trudgill",
+        "S. Nuber",
+        "H. E. Block",
+        "J. Crumpton\u2010Banks",
+        "H. Jurikova",
+        "E. Littley",
+        "M. Shankle",
+        "C. Xu",
+        "R. C. J. Steele",
+        "J. W. B. Rae"
+      ],
+      "venue": "Geochemistry, Geophysics, Geosystems",
+      "year": 2024,
+      "doi": "10.1029/2023gc011350",
+      "url": "https://doi.org/10.1029/2023gc011350",
+      "type": "journal-article"
+    },
+    {
       "title": "Revisiting Interior Water Mass Responses to Surface Forcing Changes and the Subsequent Effects on Overturning in the Southern Ocean",
       "authors": "Jan\u2010Erik Tesdal, Graeme A. MacGilchrist, Rebecca L. Beadling, Stephen M. Griffies, John P. Krasting, Paul J. Durack",
       "authors_list": [
@@ -307,6 +328,27 @@
       "year": 2022,
       "doi": "10.1029/2021jc017608",
       "url": "https://doi.org/10.1029/2021jc017608",
+      "type": "journal-article"
+    },
+    {
+      "title": "A regime shift in the Southeast Greenland marine ecosystem",
+      "authors": "Mads Peter Heide\u2010J\u00f8rgensen, Philippine Chambault, Teunis Jansen, Caroline V. B. Gjelstrup, Aqqalu Rosing\u2010Asvid, Andreas Macrander, G\u00edsli V\u00edkingsson, Xiangdong Zhang, Camilla S. Andresen, Brian R. MacKenzie",
+      "authors_list": [
+        "Mads Peter Heide\u2010J\u00f8rgensen",
+        "Philippine Chambault",
+        "Teunis Jansen",
+        "Caroline V. B. Gjelstrup",
+        "Aqqalu Rosing\u2010Asvid",
+        "Andreas Macrander",
+        "G\u00edsli V\u00edkingsson",
+        "Xiangdong Zhang",
+        "Camilla S. Andresen",
+        "Brian R. MacKenzie"
+      ],
+      "venue": "Global Change Biology",
+      "year": 2022,
+      "doi": "10.1111/gcb.16494",
+      "url": "https://doi.org/10.1111/gcb.16494",
       "type": "journal-article"
     },
     {
