@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-30T05:32:44.262741Z",
-  "count": 9,
+  "generated_at": "2026-04-06T05:33:00.583524Z",
+  "count": 10,
   "items": [
     {
       "title": "Quantifying hydrothermal ammonium mobilization from sediment and implications for the marine biosphere: a case study from the Guaymas Basin, Gulf of California",
@@ -16,22 +16,6 @@
       "year": 2025,
       "doi": "10.3389/fmicb.2025.1523696",
       "url": "https://doi.org/10.3389/fmicb.2025.1523696",
-      "type": "journal-article"
-    },
-    {
-      "title": "Long Term Predictability of Southern Ocean Surface Nutrients Using Explainable Neural Networks",
-      "authors": "Gian Giacomo Navarra, Curtis Deutsch, Antonios Mamalakis, Andrew Margolskee, Graeme MacGilchrist",
-      "authors_list": [
-        "Gian Giacomo Navarra",
-        "Curtis Deutsch",
-        "Antonios Mamalakis",
-        "Andrew Margolskee",
-        "Graeme MacGilchrist"
-      ],
-      "venue": "Journal of Geophysical Research: Machine Learning and Computation",
-      "year": 2025,
-      "doi": "10.1029/2024jh000268",
-      "url": "https://doi.org/10.1029/2024jh000268",
       "type": "journal-article"
     },
     {
@@ -85,18 +69,23 @@
       "type": "journal-article"
     },
     {
-      "title": "Demons in the North Atlantic: Variability of Deep Ocean Ventilation",
-      "authors": "G. A. MacGilchrist, H. L. Johnson, C. Lique, D. P. Marshall",
+      "title": "Importance of the Antarctic Slope Current in the Southern Ocean Response to Ice Sheet Melt and Wind Stress Change",
+      "authors": "R. L. Beadling, J. P. Krasting, S. M. Griffies, W. J. Hurlin, B. Bronselaer, J. L. Russell, G. A. MacGilchrist, J.\u2010E. Tesdal, M. Winton",
       "authors_list": [
+        "R. L. Beadling",
+        "J. P. Krasting",
+        "S. M. Griffies",
+        "W. J. Hurlin",
+        "B. Bronselaer",
+        "J. L. Russell",
         "G. A. MacGilchrist",
-        "H. L. Johnson",
-        "C. Lique",
-        "D. P. Marshall"
+        "J.\u2010E. Tesdal",
+        "M. Winton"
       ],
-      "venue": "Geophysical Research Letters",
-      "year": 2021,
-      "doi": "10.1029/2020gl092340",
-      "url": "https://doi.org/10.1029/2020gl092340",
+      "venue": "Journal of Geophysical Research: Oceans",
+      "year": 2022,
+      "doi": "10.1029/2021jc017608",
+      "url": "https://doi.org/10.1029/2021jc017608",
       "type": "journal-article"
     },
     {
@@ -118,23 +107,20 @@
       "type": "journal-article"
     },
     {
-      "title": "Reframing the carbon cycle of the subpolar Southern Ocean",
-      "authors": "Graeme A. MacGilchrist, Alberto C. Naveira Garabato, Peter J. Brown, Lo\u00efc Jullion, Sheldon Bacon, Dorothee C. E. Bakker, Mario Hoppema, Michael P. Meredith, Sinhu\u00e9 Torres-Vald\u00e9s",
+      "title": "High-latitude ocean ventilation and its role in Earth's climate transitions",
+      "authors": "Alberto C. Naveira Garabato, Graeme A.\u00a0 MacGilchrist, Peter J. Brown, D. Gwyn Evans, Andrew J. S. Meijers, Jan D. Zika",
       "authors_list": [
-        "Graeme A. MacGilchrist",
         "Alberto C. Naveira Garabato",
+        "Graeme A.\u00a0 MacGilchrist",
         "Peter J. Brown",
-        "Lo\u00efc Jullion",
-        "Sheldon Bacon",
-        "Dorothee C. E. Bakker",
-        "Mario Hoppema",
-        "Michael P. Meredith",
-        "Sinhu\u00e9 Torres-Vald\u00e9s"
+        "D. Gwyn Evans",
+        "Andrew J. S. Meijers",
+        "Jan D. Zika"
       ],
-      "venue": "Science Advances",
-      "year": 2019,
-      "doi": "10.1126/sciadv.aav6410",
-      "url": "https://doi.org/10.1126/sciadv.aav6410",
+      "venue": "Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences",
+      "year": 2017,
+      "doi": "10.1098/rsta.2016.0324",
+      "url": "https://doi.org/10.1098/rsta.2016.0324",
       "type": "journal-article"
     },
     {
@@ -151,6 +137,41 @@
       "year": 2017,
       "doi": "10.1002/2017jc012875",
       "url": "https://doi.org/10.1002/2017jc012875",
+      "type": "journal-article"
+    },
+    {
+      "title": "The Arctic Ocean carbon sink",
+      "authors": "G.A. MacGilchrist, A.C. Naveira Garabato, T. Tsubouchi, S. Bacon, S. Torres-Vald\u00e9s, K. Azetsu-Scott",
+      "authors_list": [
+        "G.A. MacGilchrist",
+        "A.C. Naveira Garabato",
+        "T. Tsubouchi",
+        "S. Bacon",
+        "S. Torres-Vald\u00e9s",
+        "K. Azetsu-Scott"
+      ],
+      "venue": "Deep Sea Research Part I: Oceanographic Research Papers",
+      "year": 2014,
+      "doi": "10.1016/j.dsr.2014.01.002",
+      "url": "https://doi.org/10.1016/j.dsr.2014.01.002",
+      "type": "journal-article"
+    },
+    {
+      "title": "Effect of enhanced\n                    <i>p</i>\n                    CO\n                    <sub>2</sub>\n                    levels on the production of dissolved organic carbon and transparent exopolymer particles in short-term bioassay experiments",
+      "authors": "G. A. MacGilchrist, T. Shi, T. Tyrrell, S. Richier, C. M. Moore, C. Dumousseaud, E. P. Achterberg",
+      "authors_list": [
+        "G. A. MacGilchrist",
+        "T. Shi",
+        "T. Tyrrell",
+        "S. Richier",
+        "C. M. Moore",
+        "C. Dumousseaud",
+        "E. P. Achterberg"
+      ],
+      "venue": "Biogeosciences",
+      "year": 2014,
+      "doi": "10.5194/bg-11-3695-2014",
+      "url": "https://doi.org/10.5194/bg-11-3695-2014",
       "type": "journal-article"
     }
   ]
