@@ -1,39 +1,25 @@
 {
-  "generated_at": "2026-04-27T06:08:56.194724Z",
-  "count": 12,
+  "generated_at": "2026-05-04T06:20:26.408813Z",
+  "count": 9,
   "items": [
     {
-      "title": "Southern Ocean CO2 outgassing and nutrient load reduced by a well-ventilated glacial North Pacific",
-      "authors": "Madison G. Shankle, Graeme A. MacGilchrist, William R. Gray, Casimir de Lavergne, Laurie C. Menviel, Andrea Burke, James W. B. Rae",
+      "title": "Water Mass Transformation Budgets in Finite\u2010Volume Generalized Vertical Coordinate Ocean Models",
+      "authors": "Henri F. Drake, Shanice Bailey, Raphael Dussin, Stephen M. Griffies, John Krasting, Graeme MacGilchrist, Geoffrey Stanley, Jan\u2010Erik Tesdal, Jan D. Zika",
       "authors_list": [
-        "Madison G. Shankle",
-        "Graeme A. MacGilchrist",
-        "William R. Gray",
-        "Casimir de Lavergne",
-        "Laurie C. Menviel",
-        "Andrea Burke",
-        "James W. B. Rae"
+        "Henri F. Drake",
+        "Shanice Bailey",
+        "Raphael Dussin",
+        "Stephen M. Griffies",
+        "John Krasting",
+        "Graeme MacGilchrist",
+        "Geoffrey Stanley",
+        "Jan\u2010Erik Tesdal",
+        "Jan D. Zika"
       ],
-      "venue": "Nature Communications",
+      "venue": "Journal of Advances in Modeling Earth Systems",
       "year": 2025,
-      "doi": "10.1038/s41467-025-63774-8",
-      "url": "https://doi.org/10.1038/s41467-025-63774-8",
-      "type": "journal-article"
-    },
-    {
-      "title": "Long Term Predictability of Southern Ocean Surface Nutrients Using Explainable Neural Networks",
-      "authors": "Gian Giacomo Navarra, Curtis Deutsch, Antonios Mamalakis, Andrew Margolskee, Graeme MacGilchrist",
-      "authors_list": [
-        "Gian Giacomo Navarra",
-        "Curtis Deutsch",
-        "Antonios Mamalakis",
-        "Andrew Margolskee",
-        "Graeme MacGilchrist"
-      ],
-      "venue": "Journal of Geophysical Research: Machine Learning and Computation",
-      "year": 2025,
-      "doi": "10.1029/2024jh000268",
-      "url": "https://doi.org/10.1029/2024jh000268",
+      "doi": "10.1029/2024ms004383",
+      "url": "https://doi.org/10.1029/2024ms004383",
       "type": "journal-article"
     },
     {
@@ -75,42 +61,6 @@
       "type": "journal-article"
     },
     {
-      "title": "Freshwater Displacement Effect on the Weddell Gyre Carbon Budget",
-      "authors": "Benjamin A. Taylor, Graeme A. MacGilchrist, Matthew R. Mazloff, Lynne D. Talley",
-      "authors_list": [
-        "Benjamin A. Taylor",
-        "Graeme A. MacGilchrist",
-        "Matthew R. Mazloff",
-        "Lynne D. Talley"
-      ],
-      "venue": "Geophysical Research Letters",
-      "year": 2023,
-      "doi": "10.1029/2023gl103952",
-      "url": "https://doi.org/10.1029/2023gl103952",
-      "type": "journal-article"
-    },
-    {
-      "title": "Enhanced subglacial discharge from Antarctica during meltwater pulse 1A",
-      "authors": "Tao Li, Laura F. Robinson, Graeme A. MacGilchrist, Tianyu Chen, Joseph A. Stewart, Andrea Burke, Maoyu Wang, Gaojun Li, Jun Chen, James W. B. Rae",
-      "authors_list": [
-        "Tao Li",
-        "Laura F. Robinson",
-        "Graeme A. MacGilchrist",
-        "Tianyu Chen",
-        "Joseph A. Stewart",
-        "Andrea Burke",
-        "Maoyu Wang",
-        "Gaojun Li",
-        "Jun Chen",
-        "James W. B. Rae"
-      ],
-      "venue": "Nature Communications",
-      "year": 2023,
-      "doi": "10.1038/s41467-023-42974-0",
-      "url": "https://doi.org/10.1038/s41467-023-42974-0",
-      "type": "journal-article"
-    },
-    {
       "title": "Importance of the Antarctic Slope Current in the Southern Ocean Response to Ice Sheet Melt and Wind Stress Change",
       "authors": "R. L. Beadling, J. P. Krasting, S. M. Griffies, W. J. Hurlin, B. Bronselaer, J. L. Russell, G. A. MacGilchrist, J.\u2010E. Tesdal, M. Winton",
       "authors_list": [
@@ -128,21 +78,6 @@
       "year": 2022,
       "doi": "10.1029/2021jc017608",
       "url": "https://doi.org/10.1029/2021jc017608",
-      "type": "journal-article"
-    },
-    {
-      "title": "Demons in the North Atlantic: Variability of Deep Ocean Ventilation",
-      "authors": "G. A. MacGilchrist, H. L. Johnson, C. Lique, D. P. Marshall",
-      "authors_list": [
-        "G. A. MacGilchrist",
-        "H. L. Johnson",
-        "C. Lique",
-        "D. P. Marshall"
-      ],
-      "venue": "Geophysical Research Letters",
-      "year": 2021,
-      "doi": "10.1029/2020gl092340",
-      "url": "https://doi.org/10.1029/2020gl092340",
       "type": "journal-article"
     },
     {
@@ -214,6 +149,23 @@
       "year": 2017,
       "doi": "10.1002/2017jc012875",
       "url": "https://doi.org/10.1002/2017jc012875",
+      "type": "journal-article"
+    },
+    {
+      "title": "The Arctic Ocean carbon sink",
+      "authors": "G.A. MacGilchrist, A.C. Naveira Garabato, T. Tsubouchi, S. Bacon, S. Torres-Vald\u00e9s, K. Azetsu-Scott",
+      "authors_list": [
+        "G.A. MacGilchrist",
+        "A.C. Naveira Garabato",
+        "T. Tsubouchi",
+        "S. Bacon",
+        "S. Torres-Vald\u00e9s",
+        "K. Azetsu-Scott"
+      ],
+      "venue": "Deep Sea Research Part I: Oceanographic Research Papers",
+      "year": 2014,
+      "doi": "10.1016/j.dsr.2014.01.002",
+      "url": "https://doi.org/10.1016/j.dsr.2014.01.002",
       "type": "journal-article"
     }
   ]
