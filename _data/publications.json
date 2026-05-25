@@ -1,22 +1,25 @@
 {
-  "generated_at": "2026-05-18T07:03:24.865180Z",
-  "count": 13,
+  "generated_at": "2026-05-25T07:55:40.254198Z",
+  "count": 8,
   "items": [
     {
-      "title": "Disequilibrium and Soft Tissue Pump Contributions to Glacial CO\n                    <sub>2</sub>\n                    Drawdown",
-      "authors": "William R. Gray, Molly Trudgill, Madison Shankle, Sarah Eggleston, Casimir de Lavergne, Eric D. Galbraith",
+      "title": "Water Mass Transformation Budgets in Finite\u2010Volume Generalized Vertical Coordinate Ocean Models",
+      "authors": "Henri F. Drake, Shanice Bailey, Raphael Dussin, Stephen M. Griffies, John Krasting, Graeme MacGilchrist, Geoffrey Stanley, Jan\u2010Erik Tesdal, Jan D. Zika",
       "authors_list": [
-        "William R. Gray",
-        "Molly Trudgill",
-        "Madison Shankle",
-        "Sarah Eggleston",
-        "Casimir de Lavergne",
-        "Eric D. Galbraith"
+        "Henri F. Drake",
+        "Shanice Bailey",
+        "Raphael Dussin",
+        "Stephen M. Griffies",
+        "John Krasting",
+        "Graeme MacGilchrist",
+        "Geoffrey Stanley",
+        "Jan\u2010Erik Tesdal",
+        "Jan D. Zika"
       ],
-      "venue": "AGU Advances",
-      "year": 2026,
-      "doi": "10.1029/2025av002016",
-      "url": "https://doi.org/10.1029/2025av002016",
+      "venue": "Journal of Advances in Modeling Earth Systems",
+      "year": 2025,
+      "doi": "10.1029/2024ms004383",
+      "url": "https://doi.org/10.1029/2024ms004383",
       "type": "journal-article"
     },
     {
@@ -98,56 +101,20 @@
       "type": "journal-article"
     },
     {
-      "title": "Southern Ocean CO2 outgassing and nutrient load reduced by a well-ventilated glacial North Pacific",
-      "authors": "Madison G. Shankle, Graeme A. MacGilchrist, William R. Gray, Casimir de Lavergne, Laurie C. Menviel, Andrea Burke, James W. B. Rae",
+      "title": "Revisiting Interior Water Mass Responses to Surface Forcing Changes and the Subsequent Effects on Overturning in the Southern Ocean",
+      "authors": "Jan\u2010Erik Tesdal, Graeme A. MacGilchrist, Rebecca L. Beadling, Stephen M. Griffies, John P. Krasting, Paul J. Durack",
       "authors_list": [
-        "Madison G. Shankle",
+        "Jan\u2010Erik Tesdal",
         "Graeme A. MacGilchrist",
-        "William R. Gray",
-        "Casimir de Lavergne",
-        "Laurie C. Menviel",
-        "Andrea Burke",
-        "James W. B. Rae"
+        "Rebecca L. Beadling",
+        "Stephen M. Griffies",
+        "John P. Krasting",
+        "Paul J. Durack"
       ],
-      "venue": "Nature Communications",
-      "year": 2025,
-      "doi": "10.1038/s41467-025-63774-8",
-      "url": "https://doi.org/10.1038/s41467-025-63774-8",
-      "type": "journal-article"
-    },
-    {
-      "title": "Residence time distributions in unstable channel flow",
-      "authors": "Nelson Pouma\u00ebre, Beno\u00eet Pier, Florence Raynal",
-      "authors_list": [
-        "Nelson Pouma\u00ebre",
-        "Beno\u00eet Pier",
-        "Florence Raynal"
-      ],
-      "venue": "Physical Review Fluids",
-      "year": 2024,
-      "doi": "10.1103/physrevfluids.9.104501",
-      "url": "https://doi.org/10.1103/physrevfluids.9.104501",
-      "type": "journal-article"
-    },
-    {
-      "title": "A Simple, Low\u2010Blank Batch Purification Method for High\u2010Precision Boron Isotope Analysis",
-      "authors": "M. Trudgill, S. Nuber, H. E. Block, J. Crumpton\u2010Banks, H. Jurikova, E. Littley, M. Shankle, C. Xu, R. C. J. Steele, J. W. B. Rae",
-      "authors_list": [
-        "M. Trudgill",
-        "S. Nuber",
-        "H. E. Block",
-        "J. Crumpton\u2010Banks",
-        "H. Jurikova",
-        "E. Littley",
-        "M. Shankle",
-        "C. Xu",
-        "R. C. J. Steele",
-        "J. W. B. Rae"
-      ],
-      "venue": "Geochemistry, Geophysics, Geosystems",
-      "year": 2024,
-      "doi": "10.1029/2023gc011350",
-      "url": "https://doi.org/10.1029/2023gc011350",
+      "venue": "Journal of Geophysical Research: Oceans",
+      "year": 2023,
+      "doi": "10.1029/2022jc019105",
+      "url": "https://doi.org/10.1029/2022jc019105",
       "type": "journal-article"
     },
     {
@@ -163,42 +130,6 @@
       "year": 2023,
       "doi": "10.1029/2023gl103952",
       "url": "https://doi.org/10.1029/2023gl103952",
-      "type": "journal-article"
-    },
-    {
-      "title": "Enhanced subglacial discharge from Antarctica during meltwater pulse 1A",
-      "authors": "Tao Li, Laura F. Robinson, Graeme A. MacGilchrist, Tianyu Chen, Joseph A. Stewart, Andrea Burke, Maoyu Wang, Gaojun Li, Jun Chen, James W. B. Rae",
-      "authors_list": [
-        "Tao Li",
-        "Laura F. Robinson",
-        "Graeme A. MacGilchrist",
-        "Tianyu Chen",
-        "Joseph A. Stewart",
-        "Andrea Burke",
-        "Maoyu Wang",
-        "Gaojun Li",
-        "Jun Chen",
-        "James W. B. Rae"
-      ],
-      "venue": "Nature Communications",
-      "year": 2023,
-      "doi": "10.1038/s41467-023-42974-0",
-      "url": "https://doi.org/10.1038/s41467-023-42974-0",
-      "type": "journal-article"
-    },
-    {
-      "title": "Demons in the North Atlantic: Variability of Deep Ocean Ventilation",
-      "authors": "G. A. MacGilchrist, H. L. Johnson, C. Lique, D. P. Marshall",
-      "authors_list": [
-        "G. A. MacGilchrist",
-        "H. L. Johnson",
-        "C. Lique",
-        "D. P. Marshall"
-      ],
-      "venue": "Geophysical Research Letters",
-      "year": 2021,
-      "doi": "10.1029/2020gl092340",
-      "url": "https://doi.org/10.1029/2020gl092340",
       "type": "journal-article"
     },
     {
@@ -220,6 +151,26 @@
       "type": "journal-article"
     },
     {
+      "title": "Reframing the carbon cycle of the subpolar Southern Ocean",
+      "authors": "Graeme A. MacGilchrist, Alberto C. Naveira Garabato, Peter J. Brown, Lo\u00efc Jullion, Sheldon Bacon, Dorothee C. E. Bakker, Mario Hoppema, Michael P. Meredith, Sinhu\u00e9 Torres-Vald\u00e9s",
+      "authors_list": [
+        "Graeme A. MacGilchrist",
+        "Alberto C. Naveira Garabato",
+        "Peter J. Brown",
+        "Lo\u00efc Jullion",
+        "Sheldon Bacon",
+        "Dorothee C. E. Bakker",
+        "Mario Hoppema",
+        "Michael P. Meredith",
+        "Sinhu\u00e9 Torres-Vald\u00e9s"
+      ],
+      "venue": "Science Advances",
+      "year": 2019,
+      "doi": "10.1126/sciadv.aav6410",
+      "url": "https://doi.org/10.1126/sciadv.aav6410",
+      "type": "journal-article"
+    },
+    {
       "title": "High-latitude ocean ventilation and its role in Earth's climate transitions",
       "authors": "Alberto C. Naveira Garabato, Graeme A.\u00a0 MacGilchrist, Peter J. Brown, D. Gwyn Evans, Andrew J. S. Meijers, Jan D. Zika",
       "authors_list": [
@@ -234,40 +185,6 @@
       "year": 2017,
       "doi": "10.1098/rsta.2016.0324",
       "url": "https://doi.org/10.1098/rsta.2016.0324",
-      "type": "journal-article"
-    },
-    {
-      "title": "Characterizing the chaotic nature of ocean ventilation",
-      "authors": "Graeme A. MacGilchrist, David P. Marshall, Helen L. Johnson, Camille Lique, Matthew Thomas",
-      "authors_list": [
-        "Graeme A. MacGilchrist",
-        "David P. Marshall",
-        "Helen L. Johnson",
-        "Camille Lique",
-        "Matthew Thomas"
-      ],
-      "venue": "Journal of Geophysical Research: Oceans",
-      "year": 2017,
-      "doi": "10.1002/2017jc012875",
-      "url": "https://doi.org/10.1002/2017jc012875",
-      "type": "journal-article"
-    },
-    {
-      "title": "Effect of enhanced\n                    <i>p</i>\n                    CO\n                    <sub>2</sub>\n                    levels on the production of dissolved organic carbon and transparent exopolymer particles in short-term bioassay experiments",
-      "authors": "G. A. MacGilchrist, T. Shi, T. Tyrrell, S. Richier, C. M. Moore, C. Dumousseaud, E. P. Achterberg",
-      "authors_list": [
-        "G. A. MacGilchrist",
-        "T. Shi",
-        "T. Tyrrell",
-        "S. Richier",
-        "C. M. Moore",
-        "C. Dumousseaud",
-        "E. P. Achterberg"
-      ],
-      "venue": "Biogeosciences",
-      "year": 2014,
-      "doi": "10.5194/bg-11-3695-2014",
-      "url": "https://doi.org/10.5194/bg-11-3695-2014",
       "type": "journal-article"
     }
   ]
