@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T08:42:42.876874Z",
+  "generated_at": "2026-06-08T08:20:03.597760Z",
   "count": 9,
   "items": [
     {
@@ -42,93 +42,73 @@
       "type": "journal-article"
     },
     {
-      "title": "The GFDL\u2010CM4X Climate Model Hierarchy, Part I: Model Description and Thermal Properties",
-      "authors": "Stephen M. Griffies, Alistair Adcroft, Rebecca L. Beadling, Mitchell Bushuk, Chiung\u2010Yin Chang, Henri F. Drake, Raphael Dussin, Robert W. Hallberg, William J. Hurlin, Hemant Khatri, John P. Krasting, Matthew Lobo, Graeme A. MacGilchrist, Brandon G. Reichl, Aakash Sane, Olga Sergienko, Maike Sonnewald, Jacob M. Steinberg, Jan\u2010Erik Tesdal, Matthew Thomas, Katherine E. Turner, Marshall L. Ward, Michael Winton, Niki Zadeh, Laure Zanna, Rong Zhang, Wenda Zhang, Ming Zhao",
+      "title": "Long Term Predictability of Southern Ocean Surface Nutrients Using Explainable Neural Networks",
+      "authors": "Gian Giacomo Navarra, Curtis Deutsch, Antonios Mamalakis, Andrew Margolskee, Graeme MacGilchrist",
       "authors_list": [
-        "Stephen M. Griffies",
-        "Alistair Adcroft",
-        "Rebecca L. Beadling",
-        "Mitchell Bushuk",
-        "Chiung\u2010Yin Chang",
-        "Henri F. Drake",
-        "Raphael Dussin",
-        "Robert W. Hallberg",
-        "William J. Hurlin",
-        "Hemant Khatri",
-        "John P. Krasting",
-        "Matthew Lobo",
-        "Graeme A. MacGilchrist",
-        "Brandon G. Reichl",
-        "Aakash Sane",
-        "Olga Sergienko",
-        "Maike Sonnewald",
-        "Jacob M. Steinberg",
-        "Jan\u2010Erik Tesdal",
-        "Matthew Thomas",
-        "Katherine E. Turner",
-        "Marshall L. Ward",
-        "Michael Winton",
-        "Niki Zadeh",
-        "Laure Zanna",
-        "Rong Zhang",
-        "Wenda Zhang",
-        "Ming Zhao"
+        "Gian Giacomo Navarra",
+        "Curtis Deutsch",
+        "Antonios Mamalakis",
+        "Andrew Margolskee",
+        "Graeme MacGilchrist"
       ],
-      "venue": "Journal of Advances in Modeling Earth Systems",
+      "venue": "Journal of Geophysical Research: Machine Learning and Computation",
       "year": 2025,
-      "doi": "10.1029/2024ms004861",
-      "url": "https://doi.org/10.1029/2024ms004861",
+      "doi": "10.1029/2024jh000268",
+      "url": "https://doi.org/10.1029/2024jh000268",
       "type": "journal-article"
     },
     {
-      "title": "Quantifying hydrothermal ammonium mobilization from sediment and implications for the marine biosphere: a case study from the Guaymas Basin, Gulf of California",
-      "authors": "Nathan Rochelle-Bates, Annabel Long, Graeme A. MacGilchrist, Andreas Teske, Eva E. St\u00fceken",
+      "title": "Steric Sea Level Rise and Relationships with Model Drift and Water Mass Representation in GFDL CM4 and ESM4",
+      "authors": "John P. Krasting, Stephen M. Griffies, Jan-Erik Tesdal, Graeme MacGilchrist, Rebecca L. Beadling, Christopher M. Little",
       "authors_list": [
-        "Nathan Rochelle-Bates",
-        "Annabel Long",
-        "Graeme A. MacGilchrist",
-        "Andreas Teske",
-        "Eva E. St\u00fceken"
-      ],
-      "venue": "Frontiers in Microbiology",
-      "year": 2025,
-      "doi": "10.3389/fmicb.2025.1523696",
-      "url": "https://doi.org/10.3389/fmicb.2025.1523696",
-      "type": "journal-article"
-    },
-    {
-      "title": "Revisiting Interior Water Mass Responses to Surface Forcing Changes and the Subsequent Effects on Overturning in the Southern Ocean",
-      "authors": "Jan\u2010Erik Tesdal, Graeme A. MacGilchrist, Rebecca L. Beadling, Stephen M. Griffies, John P. Krasting, Paul J. Durack",
-      "authors_list": [
-        "Jan\u2010Erik Tesdal",
-        "Graeme A. MacGilchrist",
-        "Rebecca L. Beadling",
-        "Stephen M. Griffies",
         "John P. Krasting",
-        "Paul J. Durack"
+        "Stephen M. Griffies",
+        "Jan-Erik Tesdal",
+        "Graeme MacGilchrist",
+        "Rebecca L. Beadling",
+        "Christopher M. Little"
       ],
-      "venue": "Journal of Geophysical Research: Oceans",
-      "year": 2023,
-      "doi": "10.1029/2022jc019105",
-      "url": "https://doi.org/10.1029/2022jc019105",
+      "venue": "Journal of Climate",
+      "year": 2024,
+      "doi": "10.1175/jcli-d-23-0591.1",
+      "url": "https://doi.org/10.1175/jcli-d-23-0591.1",
       "type": "journal-article"
     },
     {
-      "title": "Potential Predictability of the Spring Bloom in the Southern Ocean Sea Ice Zone",
-      "authors": "Benjamin Buchovecky, Graeme A. MacGilchrist, Mitchell Bushuk, F. Alexander Haumann, Thomas L. Fr\u00f6licher, Natacha Le Grix, John Dunne",
+      "title": "Spatial and Temporal Patterns of Southern Ocean Ventilation",
+      "authors": "Andrew F. Styles, Graeme A. MacGilchrist, Michael J. Bell, David P. Marshall",
       "authors_list": [
-        "Benjamin Buchovecky",
+        "Andrew F. Styles",
         "Graeme A. MacGilchrist",
-        "Mitchell Bushuk",
-        "F. Alexander Haumann",
-        "Thomas L. Fr\u00f6licher",
-        "Natacha Le Grix",
-        "John Dunne"
+        "Michael J. Bell",
+        "David P. Marshall"
       ],
       "venue": "Geophysical Research Letters",
-      "year": 2023,
-      "doi": "10.1029/2023gl105139",
-      "url": "https://doi.org/10.1029/2023gl105139",
+      "year": 2024,
+      "doi": "10.1029/2023gl106716",
+      "url": "https://doi.org/10.1029/2023gl106716",
+      "type": "journal-article"
+    },
+    {
+      "title": "Future Priorities for Observing the Dynamics of the Southern Ocean",
+      "authors": "Earle A. Wilson, Lilian A. Dove, Alison R. Gray, Graeme MacGilchrist, Sarah Purkey, Andrew F. Thompson, Madeleine Youngs, Steve Diggs, Dhruv Balwada, Ethan C. Campbell, Lynne D. Talley",
+      "authors_list": [
+        "Earle A. Wilson",
+        "Lilian A. Dove",
+        "Alison R. Gray",
+        "Graeme MacGilchrist",
+        "Sarah Purkey",
+        "Andrew F. Thompson",
+        "Madeleine Youngs",
+        "Steve Diggs",
+        "Dhruv Balwada",
+        "Ethan C. Campbell",
+        "Lynne D. Talley"
+      ],
+      "venue": "Bulletin of the American Meteorological Society",
+      "year": 2024,
+      "doi": "10.1175/bams-d-24-0254.1",
+      "url": "https://doi.org/10.1175/bams-d-24-0254.1",
       "type": "journal-article"
     },
     {
@@ -147,21 +127,23 @@
       "type": "journal-article"
     },
     {
-      "title": "Locations and Mechanisms of Ocean Ventilation in the High-Latitude North Atlantic in an Eddy-Permitting Ocean Model",
-      "authors": "Graeme A. MacGilchrist, Helen L. Johnson, David P. Marshall, Camille Lique, Matthew Thomas, Laura C. Jackson, Richard A. Wood",
+      "title": "Importance of the Antarctic Slope Current in the Southern Ocean Response to Ice Sheet Melt and Wind Stress Change",
+      "authors": "R. L. Beadling, J. P. Krasting, S. M. Griffies, W. J. Hurlin, B. Bronselaer, J. L. Russell, G. A. MacGilchrist, J.\u2010E. Tesdal, M. Winton",
       "authors_list": [
-        "Graeme A. MacGilchrist",
-        "Helen L. Johnson",
-        "David P. Marshall",
-        "Camille Lique",
-        "Matthew Thomas",
-        "Laura C. Jackson",
-        "Richard A. Wood"
+        "R. L. Beadling",
+        "J. P. Krasting",
+        "S. M. Griffies",
+        "W. J. Hurlin",
+        "B. Bronselaer",
+        "J. L. Russell",
+        "G. A. MacGilchrist",
+        "J.\u2010E. Tesdal",
+        "M. Winton"
       ],
-      "venue": "Journal of Climate",
-      "year": 2020,
-      "doi": "10.1175/jcli-d-20-0191.1",
-      "url": "https://doi.org/10.1175/jcli-d-20-0191.1",
+      "venue": "Journal of Geophysical Research: Oceans",
+      "year": 2022,
+      "doi": "10.1029/2021jc017608",
+      "url": "https://doi.org/10.1029/2021jc017608",
       "type": "journal-article"
     },
     {
