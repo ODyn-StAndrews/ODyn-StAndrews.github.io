@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-27T06:39:34.873170Z",
-  "count": 31,
+  "generated_at": "2026-08-03T06:32:31.240308Z",
+  "count": 24,
   "items": [
     {
       "title": "Diurnal sea surface temperature amplification enhances surface extremes during marine heatwaves",
@@ -37,26 +37,6 @@
       "year": 2026,
       "doi": "10.1029/2025av002016",
       "url": "https://doi.org/10.1029/2025av002016",
-      "type": "journal-article"
-    },
-    {
-      "title": "Water Mass Transformation Budgets in Finite\u2010Volume Generalized Vertical Coordinate Ocean Models",
-      "authors": "Henri F. Drake, Shanice Bailey, Raphael Dussin, Stephen M. Griffies, John Krasting, Graeme MacGilchrist, Geoffrey Stanley, Jan\u2010Erik Tesdal, Jan D. Zika",
-      "authors_list": [
-        "Henri F. Drake",
-        "Shanice Bailey",
-        "Raphael Dussin",
-        "Stephen M. Griffies",
-        "John Krasting",
-        "Graeme MacGilchrist",
-        "Geoffrey Stanley",
-        "Jan\u2010Erik Tesdal",
-        "Jan D. Zika"
-      ],
-      "venue": "Journal of Advances in Modeling Earth Systems",
-      "year": 2025,
-      "doi": "10.1029/2024ms004383",
-      "url": "https://doi.org/10.1029/2024ms004383",
       "type": "journal-article"
     },
     {
@@ -138,24 +118,6 @@
       "type": "journal-article"
     },
     {
-      "title": "The East Greenland Polar Front as a Mediator of Climate\u2010Ocean\u2010Ecosystem Variability Along Southeast Greenland",
-      "authors": "C. V. B. Gjelstrup, J. Boje, B. R. MacKenzie, S. Post, K. M. Werner, A. W. Visser, C. A. Stedmon",
-      "authors_list": [
-        "C. V. B. Gjelstrup",
-        "J. Boje",
-        "B. R. MacKenzie",
-        "S. Post",
-        "K. M. Werner",
-        "A. W. Visser",
-        "C. A. Stedmon"
-      ],
-      "venue": "Journal of Geophysical Research: Oceans",
-      "year": 2025,
-      "doi": "10.1029/2025jc022669",
-      "url": "https://doi.org/10.1029/2025jc022669",
-      "type": "journal-article"
-    },
-    {
       "title": "Southern Ocean CO2 outgassing and nutrient load reduced by a well-ventilated glacial North Pacific",
       "authors": "Madison G. Shankle, Graeme A. MacGilchrist, William R. Gray, Casimir de Lavergne, Laurie C. Menviel, Andrea Burke, James W. B. Rae",
       "authors_list": [
@@ -174,6 +136,22 @@
       "type": "journal-article"
     },
     {
+      "title": "Quantifying hydrothermal ammonium mobilization from sediment and implications for the marine biosphere: a case study from the Guaymas Basin, Gulf of California",
+      "authors": "Nathan Rochelle-Bates, Annabel Long, Graeme A. MacGilchrist, Andreas Teske, Eva E. St\u00fceken",
+      "authors_list": [
+        "Nathan Rochelle-Bates",
+        "Annabel Long",
+        "Graeme A. MacGilchrist",
+        "Andreas Teske",
+        "Eva E. St\u00fceken"
+      ],
+      "venue": "Frontiers in Microbiology",
+      "year": 2025,
+      "doi": "10.3389/fmicb.2025.1523696",
+      "url": "https://doi.org/10.3389/fmicb.2025.1523696",
+      "type": "journal-article"
+    },
+    {
       "title": "Long Term Predictability of Southern Ocean Surface Nutrients Using Explainable Neural Networks",
       "authors": "Gian Giacomo Navarra, Curtis Deutsch, Antonios Mamalakis, Andrew Margolskee, Graeme MacGilchrist",
       "authors_list": [
@@ -187,23 +165,6 @@
       "year": 2025,
       "doi": "10.1029/2024jh000268",
       "url": "https://doi.org/10.1029/2024jh000268",
-      "type": "journal-article"
-    },
-    {
-      "title": "Steric Sea Level Rise and Relationships with Model Drift and Water Mass Representation in GFDL CM4 and ESM4",
-      "authors": "John P. Krasting, Stephen M. Griffies, Jan-Erik Tesdal, Graeme MacGilchrist, Rebecca L. Beadling, Christopher M. Little",
-      "authors_list": [
-        "John P. Krasting",
-        "Stephen M. Griffies",
-        "Jan-Erik Tesdal",
-        "Graeme MacGilchrist",
-        "Rebecca L. Beadling",
-        "Christopher M. Little"
-      ],
-      "venue": "Journal of Climate",
-      "year": 2024,
-      "doi": "10.1175/jcli-d-23-0591.1",
-      "url": "https://doi.org/10.1175/jcli-d-23-0591.1",
       "type": "journal-article"
     },
     {
@@ -437,27 +398,6 @@
       "type": "journal-article"
     },
     {
-      "title": "A regime shift in the Southeast Greenland marine ecosystem",
-      "authors": "Mads Peter Heide\u2010J\u00f8rgensen, Philippine Chambault, Teunis Jansen, Caroline V. B. Gjelstrup, Aqqalu Rosing\u2010Asvid, Andreas Macrander, G\u00edsli V\u00edkingsson, Xiangdong Zhang, Camilla S. Andresen, Brian R. MacKenzie",
-      "authors_list": [
-        "Mads Peter Heide\u2010J\u00f8rgensen",
-        "Philippine Chambault",
-        "Teunis Jansen",
-        "Caroline V. B. Gjelstrup",
-        "Aqqalu Rosing\u2010Asvid",
-        "Andreas Macrander",
-        "G\u00edsli V\u00edkingsson",
-        "Xiangdong Zhang",
-        "Camilla S. Andresen",
-        "Brian R. MacKenzie"
-      ],
-      "venue": "Global Change Biology",
-      "year": 2022,
-      "doi": "10.1111/gcb.16494",
-      "url": "https://doi.org/10.1111/gcb.16494",
-      "type": "journal-article"
-    },
-    {
       "title": "Pliocene decoupling of equatorial Pacific temperature and pH gradients",
       "authors": "Madison G. Shankle, Natalie J. Burls, Alexey V. Fedorov, Matthew D. Thomas, Wei Liu, Donald E. Penman, Heather L. Ford, Peter H. Jacobs, Noah J. Planavsky, Pincelli M. Hull",
       "authors_list": [
@@ -479,21 +419,6 @@
       "type": "journal-article"
     },
     {
-      "title": "Demons in the North Atlantic: Variability of Deep Ocean Ventilation",
-      "authors": "G. A. MacGilchrist, H. L. Johnson, C. Lique, D. P. Marshall",
-      "authors_list": [
-        "G. A. MacGilchrist",
-        "H. L. Johnson",
-        "C. Lique",
-        "D. P. Marshall"
-      ],
-      "venue": "Geophysical Research Letters",
-      "year": 2021,
-      "doi": "10.1029/2020gl092340",
-      "url": "https://doi.org/10.1029/2020gl092340",
-      "type": "journal-article"
-    },
-    {
       "title": "Locations and Mechanisms of Ocean Ventilation in the High-Latitude North Atlantic in an Eddy-Permitting Ocean Model",
       "authors": "Graeme A. MacGilchrist, Helen L. Johnson, David P. Marshall, Camille Lique, Matthew Thomas, Laura C. Jackson, Richard A. Wood",
       "authors_list": [
@@ -509,26 +434,6 @@
       "year": 2020,
       "doi": "10.1175/jcli-d-20-0191.1",
       "url": "https://doi.org/10.1175/jcli-d-20-0191.1",
-      "type": "journal-article"
-    },
-    {
-      "title": "Reframing the carbon cycle of the subpolar Southern Ocean",
-      "authors": "Graeme A. MacGilchrist, Alberto C. Naveira Garabato, Peter J. Brown, Lo\u00efc Jullion, Sheldon Bacon, Dorothee C. E. Bakker, Mario Hoppema, Michael P. Meredith, Sinhu\u00e9 Torres-Vald\u00e9s",
-      "authors_list": [
-        "Graeme A. MacGilchrist",
-        "Alberto C. Naveira Garabato",
-        "Peter J. Brown",
-        "Lo\u00efc Jullion",
-        "Sheldon Bacon",
-        "Dorothee C. E. Bakker",
-        "Mario Hoppema",
-        "Michael P. Meredith",
-        "Sinhu\u00e9 Torres-Vald\u00e9s"
-      ],
-      "venue": "Science Advances",
-      "year": 2019,
-      "doi": "10.1126/sciadv.aav6410",
-      "url": "https://doi.org/10.1126/sciadv.aav6410",
       "type": "journal-article"
     },
     {
@@ -549,22 +454,6 @@
       "type": "journal-article"
     },
     {
-      "title": "Characterizing the chaotic nature of ocean ventilation",
-      "authors": "Graeme A. MacGilchrist, David P. Marshall, Helen L. Johnson, Camille Lique, Matthew Thomas",
-      "authors_list": [
-        "Graeme A. MacGilchrist",
-        "David P. Marshall",
-        "Helen L. Johnson",
-        "Camille Lique",
-        "Matthew Thomas"
-      ],
-      "venue": "Journal of Geophysical Research: Oceans",
-      "year": 2017,
-      "doi": "10.1002/2017jc012875",
-      "url": "https://doi.org/10.1002/2017jc012875",
-      "type": "journal-article"
-    },
-    {
       "title": "The Arctic Ocean carbon sink",
       "authors": "G.A. MacGilchrist, A.C. Naveira Garabato, T. Tsubouchi, S. Bacon, S. Torres-Vald\u00e9s, K. Azetsu-Scott",
       "authors_list": [
@@ -579,24 +468,6 @@
       "year": 2014,
       "doi": "10.1016/j.dsr.2014.01.002",
       "url": "https://doi.org/10.1016/j.dsr.2014.01.002",
-      "type": "journal-article"
-    },
-    {
-      "title": "Effect of enhanced\n                    <i>p</i>\n                    CO\n                    <sub>2</sub>\n                    levels on the production of dissolved organic carbon and transparent exopolymer particles in short-term bioassay experiments",
-      "authors": "G. A. MacGilchrist, T. Shi, T. Tyrrell, S. Richier, C. M. Moore, C. Dumousseaud, E. P. Achterberg",
-      "authors_list": [
-        "G. A. MacGilchrist",
-        "T. Shi",
-        "T. Tyrrell",
-        "S. Richier",
-        "C. M. Moore",
-        "C. Dumousseaud",
-        "E. P. Achterberg"
-      ],
-      "venue": "Biogeosciences",
-      "year": 2014,
-      "doi": "10.5194/bg-11-3695-2014",
-      "url": "https://doi.org/10.5194/bg-11-3695-2014",
       "type": "journal-article"
     }
   ]
