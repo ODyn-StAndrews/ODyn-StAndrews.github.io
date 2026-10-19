@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-12T10:44:07.853003Z",
-  "count": 33,
+  "generated_at": "2026-10-19T08:47:56.709304Z",
+  "count": 23,
   "items": [
     {
       "title": "Diurnal sea surface temperature amplification enhances surface extremes during marine heatwaves",
@@ -57,84 +57,6 @@
       "year": 2025,
       "doi": "10.1029/2024ms004383",
       "url": "https://doi.org/10.1029/2024ms004383",
-      "type": "journal-article"
-    },
-    {
-      "title": "The GFDL\u2010CM4X Climate Model Hierarchy, Part II: Case Studies",
-      "authors": "Stephen M. Griffies, Alistair Adcroft, Rebecca L. Beadling, Mitchell Bushuk, Chiung\u2010Yin Chang, Henri F. Drake, Raphael Dussin, Robert W. Hallberg, William J. Hurlin, Hemant Khatri, John P. Krasting, Matthew Lobo, Graeme A. MacGilchrist, Brandon G. Reichl, Aakash Sane, Olga Sergienko, Maike Sonnewald, Jacob M. Steinberg, Jan\u2010Erik Tesdal, Matthew Thomas, Katherine E. Turner, Marshall L. Ward, Michael Winton, Niki Zadeh, Laure Zanna, Rong Zhang, Wenda Zhang, Ming Zhao",
-      "authors_list": [
-        "Stephen M. Griffies",
-        "Alistair Adcroft",
-        "Rebecca L. Beadling",
-        "Mitchell Bushuk",
-        "Chiung\u2010Yin Chang",
-        "Henri F. Drake",
-        "Raphael Dussin",
-        "Robert W. Hallberg",
-        "William J. Hurlin",
-        "Hemant Khatri",
-        "John P. Krasting",
-        "Matthew Lobo",
-        "Graeme A. MacGilchrist",
-        "Brandon G. Reichl",
-        "Aakash Sane",
-        "Olga Sergienko",
-        "Maike Sonnewald",
-        "Jacob M. Steinberg",
-        "Jan\u2010Erik Tesdal",
-        "Matthew Thomas",
-        "Katherine E. Turner",
-        "Marshall L. Ward",
-        "Michael Winton",
-        "Niki Zadeh",
-        "Laure Zanna",
-        "Rong Zhang",
-        "Wenda Zhang",
-        "Ming Zhao"
-      ],
-      "venue": "Journal of Advances in Modeling Earth Systems",
-      "year": 2025,
-      "doi": "10.1029/2024ms004862",
-      "url": "https://doi.org/10.1029/2024ms004862",
-      "type": "journal-article"
-    },
-    {
-      "title": "The GFDL\u2010CM4X Climate Model Hierarchy, Part I: Model Description and Thermal Properties",
-      "authors": "Stephen M. Griffies, Alistair Adcroft, Rebecca L. Beadling, Mitchell Bushuk, Chiung\u2010Yin Chang, Henri F. Drake, Raphael Dussin, Robert W. Hallberg, William J. Hurlin, Hemant Khatri, John P. Krasting, Matthew Lobo, Graeme A. MacGilchrist, Brandon G. Reichl, Aakash Sane, Olga Sergienko, Maike Sonnewald, Jacob M. Steinberg, Jan\u2010Erik Tesdal, Matthew Thomas, Katherine E. Turner, Marshall L. Ward, Michael Winton, Niki Zadeh, Laure Zanna, Rong Zhang, Wenda Zhang, Ming Zhao",
-      "authors_list": [
-        "Stephen M. Griffies",
-        "Alistair Adcroft",
-        "Rebecca L. Beadling",
-        "Mitchell Bushuk",
-        "Chiung\u2010Yin Chang",
-        "Henri F. Drake",
-        "Raphael Dussin",
-        "Robert W. Hallberg",
-        "William J. Hurlin",
-        "Hemant Khatri",
-        "John P. Krasting",
-        "Matthew Lobo",
-        "Graeme A. MacGilchrist",
-        "Brandon G. Reichl",
-        "Aakash Sane",
-        "Olga Sergienko",
-        "Maike Sonnewald",
-        "Jacob M. Steinberg",
-        "Jan\u2010Erik Tesdal",
-        "Matthew Thomas",
-        "Katherine E. Turner",
-        "Marshall L. Ward",
-        "Michael Winton",
-        "Niki Zadeh",
-        "Laure Zanna",
-        "Rong Zhang",
-        "Wenda Zhang",
-        "Ming Zhao"
-      ],
-      "venue": "Journal of Advances in Modeling Earth Systems",
-      "year": 2025,
-      "doi": "10.1029/2024ms004861",
-      "url": "https://doi.org/10.1029/2024ms004861",
       "type": "journal-article"
     },
     {
@@ -206,23 +128,6 @@
       "type": "journal-article"
     },
     {
-      "title": "Steric Sea Level Rise and Relationships with Model Drift and Water Mass Representation in GFDL CM4 and ESM4",
-      "authors": "John P. Krasting, Stephen M. Griffies, Jan-Erik Tesdal, Graeme MacGilchrist, Rebecca L. Beadling, Christopher M. Little",
-      "authors_list": [
-        "John P. Krasting",
-        "Stephen M. Griffies",
-        "Jan-Erik Tesdal",
-        "Graeme MacGilchrist",
-        "Rebecca L. Beadling",
-        "Christopher M. Little"
-      ],
-      "venue": "Journal of Climate",
-      "year": 2024,
-      "doi": "10.1175/jcli-d-23-0591.1",
-      "url": "https://doi.org/10.1175/jcli-d-23-0591.1",
-      "type": "journal-article"
-    },
-    {
       "title": "Spatial and Temporal Patterns of Southern Ocean Ventilation",
       "authors": "Andrew F. Styles, Graeme A. MacGilchrist, Michael J. Bell, David P. Marshall",
       "authors_list": [
@@ -270,28 +175,6 @@
       "year": 2024,
       "doi": "10.1103/physrevfluids.9.104501",
       "url": "https://doi.org/10.1103/physrevfluids.9.104501",
-      "type": "journal-article"
-    },
-    {
-      "title": "Future Priorities for Observing the Dynamics of the Southern Ocean",
-      "authors": "Earle A. Wilson, Lilian A. Dove, Alison R. Gray, Graeme MacGilchrist, Sarah Purkey, Andrew F. Thompson, Madeleine Youngs, Steve Diggs, Dhruv Balwada, Ethan C. Campbell, Lynne D. Talley",
-      "authors_list": [
-        "Earle A. Wilson",
-        "Lilian A. Dove",
-        "Alison R. Gray",
-        "Graeme MacGilchrist",
-        "Sarah Purkey",
-        "Andrew F. Thompson",
-        "Madeleine Youngs",
-        "Steve Diggs",
-        "Dhruv Balwada",
-        "Ethan C. Campbell",
-        "Lynne D. Talley"
-      ],
-      "venue": "Bulletin of the American Meteorological Society",
-      "year": 2024,
-      "doi": "10.1175/bams-d-24-0254.1",
-      "url": "https://doi.org/10.1175/bams-d-24-0254.1",
       "type": "journal-article"
     },
     {
@@ -395,47 +278,6 @@
       "type": "journal-article"
     },
     {
-      "title": "Enhanced subglacial discharge from Antarctica during meltwater pulse 1A",
-      "authors": "Tao Li, Laura F. Robinson, Graeme A. MacGilchrist, Tianyu Chen, Joseph A. Stewart, Andrea Burke, Maoyu Wang, Gaojun Li, Jun Chen, James W. B. Rae",
-      "authors_list": [
-        "Tao Li",
-        "Laura F. Robinson",
-        "Graeme A. MacGilchrist",
-        "Tianyu Chen",
-        "Joseph A. Stewart",
-        "Andrea Burke",
-        "Maoyu Wang",
-        "Gaojun Li",
-        "Jun Chen",
-        "James W. B. Rae"
-      ],
-      "venue": "Nature Communications",
-      "year": 2023,
-      "doi": "10.1038/s41467-023-42974-0",
-      "url": "https://doi.org/10.1038/s41467-023-42974-0",
-      "type": "journal-article"
-    },
-    {
-      "title": "Vertical redistribution of principle water masses on the Northeast Greenland Shelf",
-      "authors": "Caroline V. B. Gjelstrup, Mikael K. Sejr, Laura de Steur, J\u00f8rgen Schou Christiansen, Mats A. Granskog, Boris P. Koch, Eva Friis M\u00f8ller, Mie H. S. Winding, Colin A. Stedmon",
-      "authors_list": [
-        "Caroline V. B. Gjelstrup",
-        "Mikael K. Sejr",
-        "Laura de Steur",
-        "J\u00f8rgen Schou Christiansen",
-        "Mats A. Granskog",
-        "Boris P. Koch",
-        "Eva Friis M\u00f8ller",
-        "Mie H. S. Winding",
-        "Colin A. Stedmon"
-      ],
-      "venue": "Nature Communications",
-      "year": 2022,
-      "doi": "10.1038/s41467-022-35413-z",
-      "url": "https://doi.org/10.1038/s41467-022-35413-z",
-      "type": "journal-article"
-    },
-    {
       "title": "Separating Annual, Interannual and Regional Change in Sea Surface Temperature in the Northeastern Atlantic and Nordic Seas",
       "authors": "Mischa J. M. Saes, Caroline V. B. Gjelstrup, Andre W. Visser, Colin A. Stedmon",
       "authors_list": [
@@ -482,27 +324,6 @@
       "year": 2022,
       "doi": "10.1029/2021jc017608",
       "url": "https://doi.org/10.1029/2021jc017608",
-      "type": "journal-article"
-    },
-    {
-      "title": "A regime shift in the Southeast Greenland marine ecosystem",
-      "authors": "Mads Peter Heide\u2010J\u00f8rgensen, Philippine Chambault, Teunis Jansen, Caroline V. B. Gjelstrup, Aqqalu Rosing\u2010Asvid, Andreas Macrander, G\u00edsli V\u00edkingsson, Xiangdong Zhang, Camilla S. Andresen, Brian R. MacKenzie",
-      "authors_list": [
-        "Mads Peter Heide\u2010J\u00f8rgensen",
-        "Philippine Chambault",
-        "Teunis Jansen",
-        "Caroline V. B. Gjelstrup",
-        "Aqqalu Rosing\u2010Asvid",
-        "Andreas Macrander",
-        "G\u00edsli V\u00edkingsson",
-        "Xiangdong Zhang",
-        "Camilla S. Andresen",
-        "Brian R. MacKenzie"
-      ],
-      "venue": "Global Change Biology",
-      "year": 2022,
-      "doi": "10.1111/gcb.16494",
-      "url": "https://doi.org/10.1111/gcb.16494",
       "type": "journal-article"
     },
     {
@@ -560,73 +381,21 @@
       "type": "journal-article"
     },
     {
-      "title": "Reframing the carbon cycle of the subpolar Southern Ocean",
-      "authors": "Graeme A. MacGilchrist, Alberto C. Naveira Garabato, Peter J. Brown, Lo\u00efc Jullion, Sheldon Bacon, Dorothee C. E. Bakker, Mario Hoppema, Michael P. Meredith, Sinhu\u00e9 Torres-Vald\u00e9s",
+      "title": "Effect of enhanced\n                    <i>p</i>\n                    CO\n                    <sub>2</sub>\n                    levels on the production of dissolved organic carbon and transparent exopolymer particles in short-term bioassay experiments",
+      "authors": "G. A. MacGilchrist, T. Shi, T. Tyrrell, S. Richier, C. M. Moore, C. Dumousseaud, E. P. Achterberg",
       "authors_list": [
-        "Graeme A. MacGilchrist",
-        "Alberto C. Naveira Garabato",
-        "Peter J. Brown",
-        "Lo\u00efc Jullion",
-        "Sheldon Bacon",
-        "Dorothee C. E. Bakker",
-        "Mario Hoppema",
-        "Michael P. Meredith",
-        "Sinhu\u00e9 Torres-Vald\u00e9s"
+        "G. A. MacGilchrist",
+        "T. Shi",
+        "T. Tyrrell",
+        "S. Richier",
+        "C. M. Moore",
+        "C. Dumousseaud",
+        "E. P. Achterberg"
       ],
-      "venue": "Science Advances",
-      "year": 2019,
-      "doi": "10.1126/sciadv.aav6410",
-      "url": "https://doi.org/10.1126/sciadv.aav6410",
-      "type": "journal-article"
-    },
-    {
-      "title": "High-latitude ocean ventilation and its role in Earth's climate transitions",
-      "authors": "Alberto C. Naveira Garabato, Graeme A.\u00a0 MacGilchrist, Peter J. Brown, D. Gwyn Evans, Andrew J. S. Meijers, Jan D. Zika",
-      "authors_list": [
-        "Alberto C. Naveira Garabato",
-        "Graeme A.\u00a0 MacGilchrist",
-        "Peter J. Brown",
-        "D. Gwyn Evans",
-        "Andrew J. S. Meijers",
-        "Jan D. Zika"
-      ],
-      "venue": "Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences",
-      "year": 2017,
-      "doi": "10.1098/rsta.2016.0324",
-      "url": "https://doi.org/10.1098/rsta.2016.0324",
-      "type": "journal-article"
-    },
-    {
-      "title": "Characterizing the chaotic nature of ocean ventilation",
-      "authors": "Graeme A. MacGilchrist, David P. Marshall, Helen L. Johnson, Camille Lique, Matthew Thomas",
-      "authors_list": [
-        "Graeme A. MacGilchrist",
-        "David P. Marshall",
-        "Helen L. Johnson",
-        "Camille Lique",
-        "Matthew Thomas"
-      ],
-      "venue": "Journal of Geophysical Research: Oceans",
-      "year": 2017,
-      "doi": "10.1002/2017jc012875",
-      "url": "https://doi.org/10.1002/2017jc012875",
-      "type": "journal-article"
-    },
-    {
-      "title": "The Arctic Ocean carbon sink",
-      "authors": "G.A. MacGilchrist, A.C. Naveira Garabato, T. Tsubouchi, S. Bacon, S. Torres-Vald\u00e9s, K. Azetsu-Scott",
-      "authors_list": [
-        "G.A. MacGilchrist",
-        "A.C. Naveira Garabato",
-        "T. Tsubouchi",
-        "S. Bacon",
-        "S. Torres-Vald\u00e9s",
-        "K. Azetsu-Scott"
-      ],
-      "venue": "Deep Sea Research Part I: Oceanographic Research Papers",
+      "venue": "Biogeosciences",
       "year": 2014,
-      "doi": "10.1016/j.dsr.2014.01.002",
-      "url": "https://doi.org/10.1016/j.dsr.2014.01.002",
+      "doi": "10.5194/bg-11-3695-2014",
+      "url": "https://doi.org/10.5194/bg-11-3695-2014",
       "type": "journal-article"
     }
   ]
